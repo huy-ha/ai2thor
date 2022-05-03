@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5346,7 +5346,7 @@ GameObject:
   - component: {fileID: 295139654}
   - component: {fileID: 295139508}
   m_Layer: 8
-  m_Name: FP224:Cube.1128
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5367,7 +5367,7 @@ GameObject:
   - component: {fileID: 295139568}
   - component: {fileID: 295139505}
   m_Layer: 8
-  m_Name: FP224:Cube.1117
+  m_Name: CounterTop
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5388,7 +5388,7 @@ GameObject:
   - component: {fileID: 295139569}
   - component: {fileID: 295139506}
   m_Layer: 8
-  m_Name: FP224:Cube.917_Cube.002
+  m_Name: Fireplace
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

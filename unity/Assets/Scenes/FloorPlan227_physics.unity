@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -50040,7 +50040,7 @@ GameObject:
   - component: {fileID: 1755795806}
   - component: {fileID: 1755795805}
   m_Layer: 8
-  m_Name: FP227:Cylinder.178 (1)
+  m_Name: SideTable
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51410,7 +51410,7 @@ GameObject:
   - component: {fileID: 1792469428}
   - component: {fileID: 1792469376}
   m_Layer: 8
-  m_Name: FP227:Cylinder.180
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51567,7 +51567,7 @@ GameObject:
   - component: {fileID: 1792469385}
   - component: {fileID: 1792469379}
   m_Layer: 8
-  m_Name: FP227:Cube.1182
+  m_Name: CounterTop
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51602,7 +51602,7 @@ GameObject:
   - component: {fileID: 1792469398}
   - component: {fileID: 1792469380}
   m_Layer: 8
-  m_Name: FP227:Cube.1181
+  m_Name: Cabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51709,7 +51709,7 @@ GameObject:
   - component: {fileID: 1792469473}
   - component: {fileID: 1792469377}
   m_Layer: 8
-  m_Name: FP227:Cube.1172
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

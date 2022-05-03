@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7170012, g: 0.7306422, b: 0.7505908, a: 1}
+  m_IndirectSpecularColor: {r: 0.70383745, g: 0.7173319, b: 0.7360205, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2071,7 +2071,7 @@ GameObject:
   - component: {fileID: 103700715}
   - component: {fileID: 103700716}
   m_Layer: 8
-  m_Name: Cube.090
+  m_Name: KitchenCabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -7144,7 +7144,7 @@ GameObject:
   - component: {fileID: 483909900}
   - component: {fileID: 483909901}
   m_Layer: 8
-  m_Name: Cube.085
+  m_Name: DishWasher
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -17196,7 +17196,7 @@ GameObject:
   - component: {fileID: 982276987}
   - component: {fileID: 982277027}
   m_Layer: 8
-  m_Name: Cube.086
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -17217,7 +17217,7 @@ GameObject:
   - component: {fileID: 982276988}
   - component: {fileID: 982277029}
   m_Layer: 8
-  m_Name: Cube.082
+  m_Name: CounterTop
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3

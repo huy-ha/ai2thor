@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2187,7 +2187,7 @@ GameObject:
   - component: {fileID: 232159547}
   - component: {fileID: 232159548}
   m_Layer: 8
-  m_Name: FP407:Cylinder.240
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4163,7 +4163,7 @@ GameObject:
   - component: {fileID: 411331078}
   - component: {fileID: 411331079}
   m_Layer: 8
-  m_Name: FP407:polySurface107
+  m_Name: Cabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4801,7 +4801,7 @@ GameObject:
   - component: {fileID: 441818542}
   - component: {fileID: 441818543}
   m_Layer: 8
-  m_Name: FP407:DoorFrame.004
+  m_Name: DoorFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13926,6 +13926,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 746670429}
     m_Modifications:
     - target: {fileID: 1036499594881244, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
+      propertyPath: m_Name
+      value: ToiletBrushHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036499594881244, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -13968,6 +13972,10 @@ PrefabInstance:
     - target: {fileID: 1618090677609456, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651559608535274, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
+      propertyPath: m_Name
+      value: ToiletBrush
       objectReference: {fileID: 0}
     - target: {fileID: 1651559608535274, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14145,7 +14153,7 @@ GameObject:
   - component: {fileID: 1238807960}
   - component: {fileID: 1238807959}
   m_Layer: 8
-  m_Name: FP407:polySurface277
+  m_Name: ShowerDrain
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16254,7 +16262,7 @@ GameObject:
   - component: {fileID: 1434279003}
   - component: {fileID: 1434279004}
   m_Layer: 8
-  m_Name: FP407:Cylinder.239
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18564,7 +18572,7 @@ GameObject:
   - component: {fileID: 1626098155}
   - component: {fileID: 1626098156}
   m_Layer: 8
-  m_Name: FP407:Cube.1366
+  m_Name: Cabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

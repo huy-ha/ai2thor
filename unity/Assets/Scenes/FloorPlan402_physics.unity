@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1555,7 +1555,7 @@ GameObject:
   - component: {fileID: 92956626}
   - component: {fileID: 92956629}
   m_Layer: 8
-  m_Name: Cube
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14879,7 +14879,7 @@ GameObject:
   - component: {fileID: 1153303328}
   - component: {fileID: 1153303331}
   m_Layer: 8
-  m_Name: Cube (1)
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1778,7 +1778,7 @@ GameObject:
   - component: {fileID: 172127686}
   - component: {fileID: 172127687}
   m_Layer: 8
-  m_Name: FP415:Cube.1898
+  m_Name: Ceiling
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3783,6 +3783,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1470984527}
     m_Modifications:
     - target: {fileID: 1036499594881244, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
+      propertyPath: m_Name
+      value: ToiletBrushHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036499594881244, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -3825,6 +3829,10 @@ PrefabInstance:
     - target: {fileID: 1618090677609456, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651559608535274, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
+      propertyPath: m_Name
+      value: ToiletBrush
       objectReference: {fileID: 0}
     - target: {fileID: 1651559608535274, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15689,6 +15697,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ShowerHead_9f0478a3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840000046526497928, guid: 36171cbd701c24e1f975bf00e91fcf73,
+        type: 3}
+      propertyPath: m_Name
+      value: ShowerHead
       objectReference: {fileID: 0}
     - target: {fileID: 3840000046526497928, guid: 36171cbd701c24e1f975bf00e91fcf73,
         type: 3}

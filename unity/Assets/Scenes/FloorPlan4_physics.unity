@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11473,7 +11473,7 @@ GameObject:
   - component: {fileID: 479699974}
   - component: {fileID: 479699977}
   m_Layer: 8
-  m_Name: Cube.730
+  m_Name: DishWasher
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -13446,7 +13446,7 @@ GameObject:
   - component: {fileID: 582596039}
   - component: {fileID: 582596042}
   m_Layer: 8
-  m_Name: Cube.729
+  m_Name: Cabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -22531,7 +22531,7 @@ GameObject:
   - component: {fileID: 983056860}
   - component: {fileID: 983056863}
   m_Layer: 8
-  m_Name: Cylinder.076
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

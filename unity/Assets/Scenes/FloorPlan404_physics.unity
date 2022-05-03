@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731257, g: 0.38074484, b: 0.35872796, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 113337888}
   - component: {fileID: 113337889}
   m_Layer: 8
-  m_Name: FP404:Ceiling
+  m_Name: Ceiling
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1709,7 +1709,7 @@ GameObject:
   - component: {fileID: 270524146}
   - component: {fileID: 270524148}
   m_Layer: 8
-  m_Name: FP404:Cube.1396
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2603,7 +2603,7 @@ GameObject:
   - component: {fileID: 370690138}
   - component: {fileID: 370690139}
   m_Layer: 8
-  m_Name: FP404:polySurface386
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3607,7 +3607,7 @@ GameObject:
   - component: {fileID: 525967419}
   - component: {fileID: 525967421}
   m_Layer: 8
-  m_Name: FP404:Cube.1393
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4446,7 +4446,7 @@ GameObject:
   - component: {fileID: 689125647}
   - component: {fileID: 689125648}
   m_Layer: 8
-  m_Name: FP404:Cube.1397
+  m_Name: Cabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5772,7 +5772,7 @@ GameObject:
   - component: {fileID: 933754248}
   - component: {fileID: 933754249}
   m_Layer: 8
-  m_Name: FP404:polySurface159
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7130,7 +7130,7 @@ GameObject:
   - component: {fileID: 1045707820}
   - component: {fileID: 1045707821}
   m_Layer: 8
-  m_Name: FP404:Walls
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7424,7 +7424,7 @@ GameObject:
   - component: {fileID: 1107217849}
   - component: {fileID: 1107217850}
   m_Layer: 8
-  m_Name: FP404:polySurface387
+  m_Name: DoorKnob
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8208,7 +8208,7 @@ GameObject:
   - component: {fileID: 1240766042}
   - component: {fileID: 1240766043}
   m_Layer: 8
-  m_Name: FP404:polySurface305
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9635,7 +9635,7 @@ GameObject:
   - component: {fileID: 1410180880}
   - component: {fileID: 1410180882}
   m_Layer: 8
-  m_Name: FP404:Cylinder.252
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

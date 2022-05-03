@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 7154262}
   - component: {fileID: 7154263}
   m_Layer: 8
-  m_Name: Cube.072
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -3190,7 +3190,7 @@ GameObject:
   - component: {fileID: 94240011}
   - component: {fileID: 94240010}
   m_Layer: 8
-  m_Name: Cube.047
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -9967,7 +9967,7 @@ GameObject:
   - component: {fileID: 313924444}
   - component: {fileID: 313924443}
   m_Layer: 0
-  m_Name: Cube.046
+  m_Name: Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -12198,7 +12198,7 @@ GameObject:
   - component: {fileID: 369299270}
   - component: {fileID: 369299272}
   m_Layer: 0
-  m_Name: Cube.066
+  m_Name: KitchenCabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -12505,7 +12505,7 @@ GameObject:
   - component: {fileID: 373987626}
   - component: {fileID: 373987627}
   m_Layer: 8
-  m_Name: Cube.049
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -13631,7 +13631,7 @@ GameObject:
   - component: {fileID: 405431757}
   - component: {fileID: 405431758}
   m_Layer: 8
-  m_Name: Cube.040
+  m_Name: Stove
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -15262,7 +15262,7 @@ GameObject:
   - component: {fileID: 463518776}
   - component: {fileID: 463518777}
   m_Layer: 8
-  m_Name: Cube.075
+  m_Name: Ceiling
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -16308,7 +16308,7 @@ GameObject:
   - component: {fileID: 506623867}
   - component: {fileID: 506623868}
   m_Layer: 8
-  m_Name: Cube.071
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -30999,7 +30999,7 @@ GameObject:
   - component: {fileID: 984904582}
   - component: {fileID: 984904583}
   m_Layer: 8
-  m_Name: Cube.055
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -31841,7 +31841,7 @@ GameObject:
   - component: {fileID: 1009421875}
   - component: {fileID: 1009421876}
   m_Layer: 8
-  m_Name: Cube.054
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -32921,7 +32921,7 @@ GameObject:
   - component: {fileID: 1043022183}
   - component: {fileID: 1043022184}
   m_Layer: 8
-  m_Name: Cube.032
+  m_Name: OvenHood
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -40395,7 +40395,7 @@ GameObject:
   - component: {fileID: 1222935221}
   - component: {fileID: 1222935222}
   m_Layer: 8
-  m_Name: Cube.017
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -50196,7 +50196,7 @@ GameObject:
   - component: {fileID: 1436149705}
   - component: {fileID: 1436149706}
   m_Layer: 8
-  m_Name: Cube.015
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -53347,7 +53347,7 @@ GameObject:
   - component: {fileID: 1532112194}
   - component: {fileID: 1532112196}
   m_Layer: 0
-  m_Name: Cube.070
+  m_Name: KitchenCabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -54569,7 +54569,7 @@ GameObject:
   - component: {fileID: 1559298489}
   - component: {fileID: 1559298491}
   m_Layer: 8
-  m_Name: Cube.067
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

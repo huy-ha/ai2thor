@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7170012, g: 0.7306422, b: 0.7505908, a: 1}
+  m_IndirectSpecularColor: {r: 0.70383745, g: 0.7173319, b: 0.7360205, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 558416}
   - component: {fileID: 558415}
   m_Layer: 8
-  m_Name: Cube.371
+  m_Name: PaperBag
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -10635,7 +10635,7 @@ GameObject:
   - component: {fileID: 535065043}
   - component: {fileID: 535065049}
   m_Layer: 8
-  m_Name: Cube.366
+  m_Name: CounterTop
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -10656,7 +10656,7 @@ GameObject:
   - component: {fileID: 535065044}
   - component: {fileID: 535065050}
   m_Layer: 8
-  m_Name: Cube.358
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -21644,7 +21644,7 @@ GameObject:
   - component: {fileID: 1178749032}
   - component: {fileID: 1178749033}
   m_Layer: 8
-  m_Name: Cube.355
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -22524,7 +22524,7 @@ GameObject:
   - component: {fileID: 1204978666}
   - component: {fileID: 1204978667}
   m_Layer: 8
-  m_Name: Cube.354
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -22842,7 +22842,7 @@ GameObject:
   - component: {fileID: 1224498392}
   - component: {fileID: 1224498393}
   m_Layer: 8
-  m_Name: Cube.346
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -24689,7 +24689,7 @@ GameObject:
   - component: {fileID: 1337413915}
   - component: {fileID: 1337413916}
   m_Layer: 8
-  m_Name: Cube.349
+  m_Name: Stove
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -35459,7 +35459,7 @@ GameObject:
   - component: {fileID: 2071391826}
   - component: {fileID: 2071391827}
   m_Layer: 8
-  m_Name: Cube.363
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3

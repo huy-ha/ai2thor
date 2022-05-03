@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11434,7 +11434,7 @@ GameObject:
   - component: {fileID: 1136025108}
   - component: {fileID: 1136025114}
   m_Layer: 8
-  m_Name: FP209:Cylinder.097
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11496,7 +11496,7 @@ GameObject:
   - component: {fileID: 1136025180}
   - component: {fileID: 1136025115}
   m_Layer: 8
-  m_Name: FP209:Cube.942
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11516,7 +11516,7 @@ GameObject:
   - component: {fileID: 1136025192}
   - component: {fileID: 1136025118}
   m_Layer: 8
-  m_Name: FP209:Cube.938
+  m_Name: TV
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -11558,7 +11558,7 @@ GameObject:
   - component: {fileID: 1136025121}
   - component: {fileID: 1136025166}
   m_Layer: 8
-  m_Name: FP209:Cube.933
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11579,7 +11579,7 @@ GameObject:
   - component: {fileID: 1136025122}
   - component: {fileID: 1136025116}
   m_Layer: 8
-  m_Name: FP209:Cube.917_Cube.000
+  m_Name: Fireplace
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

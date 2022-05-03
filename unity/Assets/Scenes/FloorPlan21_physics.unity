@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7170012, g: 0.7306422, b: 0.7505908, a: 1}
+  m_IndirectSpecularColor: {r: 0.70383745, g: 0.7173319, b: 0.7360205, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4697,7 +4697,7 @@ GameObject:
   - component: {fileID: 333630691}
   - component: {fileID: 333630694}
   m_Layer: 8
-  m_Name: Cube.392
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -5721,7 +5721,7 @@ GameObject:
   - component: {fileID: 406571584}
   - component: {fileID: 406571583}
   m_Layer: 8
-  m_Name: Cube.394
+  m_Name: Mirror
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -5823,7 +5823,7 @@ GameObject:
   - component: {fileID: 410049562}
   - component: {fileID: 410049565}
   m_Layer: 8
-  m_Name: Cube.375
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -9995,7 +9995,7 @@ GameObject:
   - component: {fileID: 670070427}
   - component: {fileID: 670070430}
   m_Layer: 8
-  m_Name: Cube.374
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -10509,7 +10509,7 @@ GameObject:
   - component: {fileID: 697073224}
   - component: {fileID: 697073227}
   m_Layer: 8
-  m_Name: Cube.372
+  m_Name: CounterTop
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -13921,7 +13921,7 @@ GameObject:
   - component: {fileID: 868862852}
   - component: {fileID: 868862851}
   m_Layer: 8
-  m_Name: Cube.393
+  m_Name: PaperTowelDispenser
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -16698,7 +16698,7 @@ GameObject:
   - component: {fileID: 958486506}
   - component: {fileID: 958486505}
   m_Layer: 8
-  m_Name: Cube
+  m_Name: Mirror
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -18154,7 +18154,7 @@ GameObject:
   - component: {fileID: 1066046475}
   - component: {fileID: 1066046474}
   m_Layer: 8
-  m_Name: Cylinder.049
+  m_Name: Jar
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -20685,7 +20685,7 @@ GameObject:
   - component: {fileID: 1201441054}
   - component: {fileID: 1201441057}
   m_Layer: 8
-  m_Name: Cube.388
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -25132,7 +25132,7 @@ GameObject:
   - component: {fileID: 1489079663}
   - component: {fileID: 1489079662}
   m_Layer: 8
-  m_Name: Cube.395
+  m_Name: PaperBag
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -25635,7 +25635,7 @@ GameObject:
   - component: {fileID: 1512407693}
   - component: {fileID: 1512407695}
   m_Layer: 8
-  m_Name: DecorativePanel
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -25777,7 +25777,7 @@ GameObject:
   - component: {fileID: 1521447798}
   - component: {fileID: 1521447801}
   m_Layer: 8
-  m_Name: Cube.384
+  m_Name: Stool
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -33279,7 +33279,7 @@ GameObject:
   - component: {fileID: 2066775658}
   - component: {fileID: 2066775661}
   m_Layer: 8
-  m_Name: Cube.376
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -33465,7 +33465,7 @@ GameObject:
   - component: {fileID: 2075908847}
   - component: {fileID: 2075908846}
   m_Layer: 8
-  m_Name: Cylinder.048
+  m_Name: PaperTowel
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -33938,7 +33938,7 @@ GameObject:
   - component: {fileID: 2094567318}
   - component: {fileID: 2094567321}
   m_Layer: 8
-  m_Name: Cube.386
+  m_Name: OvenHood
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3

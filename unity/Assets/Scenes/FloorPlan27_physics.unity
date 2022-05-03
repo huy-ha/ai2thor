@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6649,7 +6649,7 @@ GameObject:
   - component: {fileID: 323125296}
   - component: {fileID: 323125295}
   m_Layer: 8
-  m_Name: Cube.146
+  m_Name: Curtains
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -9450,7 +9450,7 @@ GameObject:
   - component: {fileID: 432246061}
   - component: {fileID: 432246064}
   m_Layer: 8
-  m_Name: Cube.165
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -15123,7 +15123,7 @@ GameObject:
   - component: {fileID: 758571594}
   - component: {fileID: 758571597}
   m_Layer: 8
-  m_Name: Cube.155
+  m_Name: KitchenCabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -16527,7 +16527,7 @@ GameObject:
   - component: {fileID: 833402284}
   - component: {fileID: 833402286}
   m_Layer: 0
-  m_Name: Cylinder.031
+  m_Name: LightFixture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -21898,8 +21898,16 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1000011646828516, guid: f60ac4139b8084bed801983d5e09c5c4, type: 3}
+      propertyPath: m_Name
+      value: OvenDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011646828516, guid: f60ac4139b8084bed801983d5e09c5c4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012619615770, guid: f60ac4139b8084bed801983d5e09c5c4, type: 3}
+      propertyPath: m_Name
+      value: OvenDoor
       objectReference: {fileID: 0}
     - target: {fileID: 1000012619615770, guid: f60ac4139b8084bed801983d5e09c5c4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24668,7 +24676,7 @@ GameObject:
   - component: {fileID: 1301703262}
   - component: {fileID: 1301703265}
   m_Layer: 8
-  m_Name: Cube.164
+  m_Name: CounterTop
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -27629,7 +27637,7 @@ GameObject:
   - component: {fileID: 1494186118}
   - component: {fileID: 1494186117}
   m_Layer: 8
-  m_Name: Cube.144
+  m_Name: OvenVent
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
