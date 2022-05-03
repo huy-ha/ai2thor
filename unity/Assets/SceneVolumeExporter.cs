@@ -6,8 +6,7 @@ using System.Linq;
 using System;
 
 public class SceneVolumeExporter : MonoBehaviour {
-    // private int numPtsPerObj = 2000;
-    private int numPtsPerObj = 50;
+    private int numPtsPerObj = 2000;
 
     // https://answers.unity.com/questions/1600764/point-inside-mesh.html
     public bool IsInCollider(MeshCollider other, Vector3 point) {
@@ -101,7 +100,17 @@ public class SceneVolumeExporter : MonoBehaviour {
         structures = topLevelStructures.Values.ToList();
         Dictionary<Collider, StructureObject> colliderStructureMap = new Dictionary<Collider, StructureObject>();
         foreach (StructureObject structure in structures) {
-            foreach (Collider childCollider in structure.gameObject.GetComponentsInChildren<Collider>()) {
+            Collider[] objColliders = structure.gameObject.GetComponentsInChildren<Collider>();
+            if (objColliders.Length == 0) {
+                Debug.Log(structure.name + "|" + objColliders.Length);
+                MeshFilter meshFilter = structure.gameObject.GetComponentsInChildren<MeshFilter>()[0];
+                MeshCollider mc = structure.gameObject.AddComponent<MeshCollider>();
+                mc.sharedMesh = meshFilter.mesh;
+                mc.convex = false;
+                objColliders = structure.gameObject.GetComponentsInChildren<Collider>();
+                Debug.Log(structure.name + "|" + objColliders.Length);
+            }
+            foreach (Collider childCollider in objColliders) {
                 if (!colliderStructureMap.ContainsKey(childCollider)) {
                     colliderStructureMap.Add(childCollider, structure);
                     sceneBounds.Encapsulate(childCollider.bounds);
