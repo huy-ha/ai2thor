@@ -46,8 +46,9 @@ public class SceneVolumeExporter : MonoBehaviour {
         return (counter);
     }
 
+
     Collider checkCollisionWithColliders(Vector3 pt, Collider[] colliders, LayerMask mask) {
-        Collider[] hitColliders = Physics.OverlapSphere(pt, 0.01f, mask);
+        Collider[] hitColliders = Physics.OverlapSphere(pt, 0.001f, mask);
         foreach (Collider c in hitColliders) {
             if (colliders.Contains(c)) {
                 return c;
@@ -83,7 +84,6 @@ public class SceneVolumeExporter : MonoBehaviour {
         string objid;
         List<Collider> componentColliders;
         var random = new System.Random();
-        Collider componentCollider, c;
 
         // Get all scene objects
         Dictionary<GameObject, string> sceneObjects = new Dictionary<GameObject, string>();
@@ -91,10 +91,39 @@ public class SceneVolumeExporter : MonoBehaviour {
         var objectsGameObject = sceneRootObjs["Objects"];
         var structuresGameObject = sceneRootObjs["Structure"];
         foreach (Transform child in sceneRootObjs["Objects"].transform) {
-            sceneObjects.Add(child.gameObject, child.name);
+            if (child.name.ToLower().Contains("hideandseek"))
+                continue;
+            if (!child.gameObject.gameObject.GetComponent<SimObjPhysics>() &&
+                !child.gameObject.gameObject.GetComponent<MeshFilter>() &&
+                child.gameObject.GetComponentsInChildren<MeshFilter>().Length > 0) {
+                foreach (var childMeshFilter in child.gameObject.GetComponentsInChildren<MeshFilter>()) {
+                    if (childMeshFilter.name.ToLower().Contains("mesh")) {
+                        sceneObjects.Add(childMeshFilter.gameObject, child.name);
+                    } else {
+                        sceneObjects.Add(childMeshFilter.gameObject, childMeshFilter.name);
+                    }
+                }
+            } else {
+                sceneObjects.Add(child.gameObject, child.name);
+            }
         }
         foreach (Transform child in sceneRootObjs["Structure"].transform) {
-            sceneObjects.Add(child.gameObject, child.name);
+            if (child.name.ToLower().Contains("hideandseek"))
+                continue;
+            if (!child.gameObject.gameObject.GetComponent<SimObjPhysics>() &&
+                !child.gameObject.gameObject.GetComponent<MeshFilter>() &&
+                child.gameObject.GetComponentsInChildren<MeshFilter>().Length > 0) {
+                foreach (var childMeshFilter in child.gameObject.GetComponentsInChildren<MeshFilter>()) {
+                    if (childMeshFilter.name.ToLower().Contains("mesh")) {
+                        sceneObjects.Add(childMeshFilter.gameObject, child.name);
+                    } else {
+                        sceneObjects.Add(childMeshFilter.gameObject, childMeshFilter.name);
+                    }
+                }
+            } else {
+                sceneObjects.Add(child.gameObject, child.name);
+            }
+
         }
         Dictionary<Collider, GameObject> colliderMap = new Dictionary<Collider, GameObject>();
         foreach (GameObject o in sceneObjects.Keys) {
@@ -124,13 +153,20 @@ public class SceneVolumeExporter : MonoBehaviour {
 
 
             foreach (Collider childCollider in objColliders) {
+                if (childCollider.isTrigger)
+                    continue;
+                Debug.Log(o.name + " has collider of " + childCollider.name);
                 if (!colliderMap.ContainsKey(childCollider)) {
                     colliderMap.Add(childCollider, o);
-                    sceneBounds.Encapsulate(childCollider.bounds);
+                } else {
+                    colliderMap[childCollider] = o;
                 }
+                sceneBounds.Encapsulate(childCollider.bounds);
             }
         }
 
+        Collider componentCollider, c;
+        SimObjPhysics[] simObjComponents;
         Collider[] allColliders = colliderMap.Keys.ToArray();
         foreach (var kvp in sceneObjects) {
             componentColliders = kvp.Key.GetComponentsInChildren<Collider>().ToList();
@@ -163,6 +199,7 @@ public class SceneVolumeExporter : MonoBehaviour {
                     break;
                 }
                 componentCollider = componentColliders[random.Next(componentColliders.Count)];
+
                 samplingBounds = componentCollider.bounds;
                 sceneBounds.Encapsulate(samplingBounds);
                 samplePos.x = UnityEngine.Random.Range(samplingBounds.min[0], samplingBounds.max[0]);
@@ -172,11 +209,11 @@ public class SceneVolumeExporter : MonoBehaviour {
                 objid = "empty";
                 c = checkCollisionWithColliders(samplePos, allColliders, mask);
                 if (c && colliderMap.ContainsKey(c)) {
-                    SimObjPhysics[] simObjComponents = colliderMap[c].GetComponentsInChildren<SimObjPhysics>();
+                    simObjComponents = colliderMap[c].GetComponentsInChildren<SimObjPhysics>();
                     if (simObjComponents.Length > 0) {
                         objid = simObjComponents[0].objectID;
                     } else {
-                        objid = colliderMap[c].name + "|" +
+                        objid = sceneObjects[colliderMap[c]] + "|" +
                     colliderMap[c].transform.position.x + "|" +
                     +colliderMap[c].transform.position.y + "|" +
                     colliderMap[c].transform.position.z;
@@ -187,8 +224,37 @@ public class SceneVolumeExporter : MonoBehaviour {
 
                 if (c && componentColliders.Contains(c)) {
                     num_positives += 1;
-                }
+                } else if (componentCollider.GetType() == typeof(MeshCollider)) {
+                    simObjComponents = colliderMap[componentCollider].GetComponentsInChildren<SimObjPhysics>();
+                    if (simObjComponents.Length > 0) {
+                        objid = simObjComponents[0].objectID;
+                    } else {
 
+                        objid = sceneObjects[colliderMap[componentCollider]] + "|" +
+                    colliderMap[componentCollider].transform.position.x + "|" +
+                    +colliderMap[componentCollider].transform.position.y + "|" +
+                    colliderMap[componentCollider].transform.position.z;
+                    }
+                    // Is a mesh collider, collisions are hard.
+                    // Try adding points on vertices
+                    Matrix4x4 localToWorld = componentCollider.gameObject.transform.localToWorldMatrix;
+                    Mesh m = ((MeshCollider)componentCollider).sharedMesh;
+                    int faceIndex = random.Next((int)(m.triangles.Length / 3));
+                    Vector3 v1, v2, v3;
+                    v1 = m.vertices[m.triangles[faceIndex * 3]];
+                    v2 = m.vertices[m.triangles[faceIndex * 3 + 1]];
+                    v3 = m.vertices[m.triangles[faceIndex * 3 + 2]];
+                    float r1 = Mathf.Sqrt((float)random.NextDouble());
+                    float r2 = (float)random.NextDouble();
+                    float m1 = 1 - r1;
+                    float m2 = r1 * (1 - r2);
+                    float m3 = r2 * r1;
+                    samplePos = (m1 * v1) + (m2 * v2) + (m3 * v3);
+                    samplePos = localToWorld.MultiplyPoint3x4(samplePos);
+                    full_xyz_pts.Add(samplePos.x + "|" + samplePos.y + "|" + samplePos.z);
+                    full_objid_pts.Add(objid);
+                    num_positives += 1;
+                }
             }
         }
         for (int i = 0; i < numPtsPerObj * 500; i++) {
@@ -199,11 +265,11 @@ public class SceneVolumeExporter : MonoBehaviour {
             objid = "empty";
             c = checkCollisionWithColliders(samplePos, allColliders, mask);
             if (c && colliderMap.ContainsKey(c)) {
-                SimObjPhysics[] simObjComponents = colliderMap[c].GetComponentsInChildren<SimObjPhysics>();
+                simObjComponents = colliderMap[c].GetComponentsInChildren<SimObjPhysics>();
                 if (simObjComponents.Length > 0) {
                     objid = simObjComponents[0].objectID;
                 } else {
-                    objid = colliderMap[c].name + "|" +
+                    objid = sceneObjects[colliderMap[c]] + "|" +
                 colliderMap[c].transform.position.x + "|" +
                 +colliderMap[c].transform.position.y + "|" +
                 colliderMap[c].transform.position.z;
