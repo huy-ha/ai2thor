@@ -130,12 +130,16 @@ public class SceneVolumeExporter : MonoBehaviour {
             Collider[] objColliders = o.GetComponentsInChildren<Collider>();
             MeshFilter[] objMeshFilters = o.gameObject.GetComponentsInChildren<MeshFilter>();
             if (objColliders.Length == 0) {
-                Debug.Log(o.name + " doesn't have colliders. Adding one based on mesh");
-                MeshFilter meshFilter = objMeshFilters[0];
-                MeshCollider mc = o.gameObject.AddComponent<MeshCollider>();
-                mc.sharedMesh = meshFilter.mesh;
-                mc.convex = false;
-                objColliders = o.gameObject.GetComponentsInChildren<Collider>();
+                if (objMeshFilters.Length > 0) {
+                    Debug.Log(o.name + " doesn't have colliders. Adding one based on mesh");
+                    MeshFilter meshFilter = objMeshFilters[0];
+                    MeshCollider mc = o.gameObject.AddComponent<MeshCollider>();
+                    mc.sharedMesh = meshFilter.mesh;
+                    mc.convex = false;
+                    objColliders = o.gameObject.GetComponentsInChildren<Collider>();
+                } else {
+                    continue;
+                }
             }
 
             // replace all simple colliders with mesh colliders if possible
@@ -169,7 +173,8 @@ public class SceneVolumeExporter : MonoBehaviour {
         SimObjPhysics[] simObjComponents;
         Collider[] allColliders = colliderMap.Keys.ToArray();
         foreach (var kvp in sceneObjects) {
-            componentColliders = kvp.Key.GetComponentsInChildren<Collider>().ToList();
+            componentColliders = kvp.Key.GetComponentsInChildren<Collider>().ToList().FindAll(
+                col => !col.isTrigger);
             if (componentColliders.Count == 0) {
                 Debug.LogWarning(kvp.Value + " has no collider");
                 continue;
@@ -221,39 +226,52 @@ public class SceneVolumeExporter : MonoBehaviour {
                 }
                 full_xyz_pts.Add(samplePos.x + "|" + samplePos.y + "|" + samplePos.z);
                 full_objid_pts.Add(objid);
-
+                Mesh m = null;
+                int faceIndex = -1;
                 if (c && componentColliders.Contains(c)) {
                     num_positives += 1;
                 } else if (componentCollider.GetType() == typeof(MeshCollider)) {
-                    simObjComponents = colliderMap[componentCollider].GetComponentsInChildren<SimObjPhysics>();
-                    if (simObjComponents.Length > 0) {
-                        objid = simObjComponents[0].objectID;
-                    } else {
+                    try {
+                        simObjComponents = colliderMap[componentCollider].GetComponentsInChildren<SimObjPhysics>();
+                        if (simObjComponents.Length > 0) {
+                            objid = simObjComponents[0].objectID;
+                        } else {
 
-                        objid = sceneObjects[colliderMap[componentCollider]] + "|" +
-                    colliderMap[componentCollider].transform.position.x + "|" +
-                    +colliderMap[componentCollider].transform.position.y + "|" +
-                    colliderMap[componentCollider].transform.position.z;
+                            objid = sceneObjects[colliderMap[componentCollider]] + "|" +
+                        colliderMap[componentCollider].transform.position.x + "|" +
+                        +colliderMap[componentCollider].transform.position.y + "|" +
+                        colliderMap[componentCollider].transform.position.z;
+                        }
+                        // Is a mesh collider, collisions are hard.
+                        // Try adding points on vertices
+                        Matrix4x4 localToWorld = componentCollider.gameObject.transform.localToWorldMatrix;
+                        m = ((MeshCollider)componentCollider).sharedMesh;
+                        if (m == null || m.triangles.Length == 0 || m.vertices.Length == 0)
+                            continue;
+
+                        faceIndex = random.Next((int)Mathf.Floor(m.triangles.Length / 3));
+                        Vector3 v1, v2, v3;
+                        v1 = m.vertices[m.triangles[faceIndex * 3]];
+                        v2 = m.vertices[m.triangles[faceIndex * 3 + 1]];
+                        v3 = m.vertices[m.triangles[faceIndex * 3 + 2]];
+                        float r1 = Mathf.Sqrt((float)random.NextDouble());
+                        float r2 = (float)random.NextDouble();
+                        float m1 = 1 - r1;
+                        float m2 = r1 * (1 - r2);
+                        float m3 = r2 * r1;
+                        samplePos = (m1 * v1) + (m2 * v2) + (m3 * v3);
+                        samplePos = localToWorld.MultiplyPoint3x4(samplePos);
+                        full_xyz_pts.Add(samplePos.x + "|" + samplePos.y + "|" + samplePos.z);
+                        full_objid_pts.Add(objid);
+                        num_positives += 1;
+                    } catch (IndexOutOfRangeException e) {
+                        Debug.Log(e);
+                        Debug.Log("m.triangles: " + m.triangles.Length + " | " + faceIndex);
+                        Debug.Log("m.vertices: " + m.vertices.Length
+                        + " | [" + m.triangles[faceIndex * 3] + "]["
+                         + m.triangles[faceIndex * 3 + 1] + "]["
+                          + m.triangles[faceIndex * 3 + 2] + "]");
                     }
-                    // Is a mesh collider, collisions are hard.
-                    // Try adding points on vertices
-                    Matrix4x4 localToWorld = componentCollider.gameObject.transform.localToWorldMatrix;
-                    Mesh m = ((MeshCollider)componentCollider).sharedMesh;
-                    int faceIndex = random.Next((int)(m.triangles.Length / 3));
-                    Vector3 v1, v2, v3;
-                    v1 = m.vertices[m.triangles[faceIndex * 3]];
-                    v2 = m.vertices[m.triangles[faceIndex * 3 + 1]];
-                    v3 = m.vertices[m.triangles[faceIndex * 3 + 2]];
-                    float r1 = Mathf.Sqrt((float)random.NextDouble());
-                    float r2 = (float)random.NextDouble();
-                    float m1 = 1 - r1;
-                    float m2 = r1 * (1 - r2);
-                    float m3 = r2 * r1;
-                    samplePos = (m1 * v1) + (m2 * v2) + (m3 * v3);
-                    samplePos = localToWorld.MultiplyPoint3x4(samplePos);
-                    full_xyz_pts.Add(samplePos.x + "|" + samplePos.y + "|" + samplePos.z);
-                    full_objid_pts.Add(objid);
-                    num_positives += 1;
                 }
             }
         }
