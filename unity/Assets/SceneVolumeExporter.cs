@@ -91,7 +91,7 @@ public class SceneVolumeExporter : MonoBehaviour {
         var objectsGameObject = sceneRootObjs["Objects"];
         var structuresGameObject = sceneRootObjs["Structure"];
         foreach (Transform child in sceneRootObjs["Objects"].transform) {
-            if (child.name.ToLower().Contains("hideandseek"))
+            if (!child.gameObject.activeSelf || child.name.ToLower().Contains("hideandseek") || child.name.ToLower().Contains("lightray"))
                 continue;
             if (!child.gameObject.gameObject.GetComponent<SimObjPhysics>() &&
                 !child.gameObject.gameObject.GetComponent<MeshFilter>() &&
@@ -108,7 +108,7 @@ public class SceneVolumeExporter : MonoBehaviour {
             }
         }
         foreach (Transform child in sceneRootObjs["Structure"].transform) {
-            if (child.name.ToLower().Contains("hideandseek"))
+            if (!child.gameObject.activeSelf || child.name.ToLower().Contains("hideandseek") || child.name.ToLower().Contains("lightray"))
                 continue;
             if (!child.gameObject.gameObject.GetComponent<SimObjPhysics>() &&
                 !child.gameObject.gameObject.GetComponent<MeshFilter>() &&
@@ -236,7 +236,6 @@ public class SceneVolumeExporter : MonoBehaviour {
                         if (simObjComponents.Length > 0) {
                             objid = simObjComponents[0].objectID;
                         } else {
-
                             objid = sceneObjects[colliderMap[componentCollider]] + "|" +
                         colliderMap[componentCollider].transform.position.x + "|" +
                         +colliderMap[componentCollider].transform.position.y + "|" +
