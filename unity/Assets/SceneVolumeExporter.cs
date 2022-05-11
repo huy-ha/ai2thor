@@ -65,8 +65,9 @@ public class SceneVolumeExporter : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         UnityEngine.SceneManagement.Scene scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+        int seed = Int32.Parse(System.IO.File.ReadAllLines("/home/huy/langmdp/ai2thor/seed.txt")[0]);
         string sceneName = scene.name;
-        string directoryPath = "/home/huy/langmdp/ai2thor/" + sceneName;
+        string directoryPath = "/home/huy/langmdp/ai2thor/" + sceneName + "_seed" + seed;
         if (!Directory.Exists(directoryPath)) {
             Directory.CreateDirectory(directoryPath);
         }
@@ -83,7 +84,7 @@ public class SceneVolumeExporter : MonoBehaviour {
         Bounds samplingBounds;
         string objid;
         List<Collider> componentColliders;
-        var random = new System.Random();
+        var random = new System.Random(seed);
 
         // Get all scene objects
         Dictionary<GameObject, string> sceneObjects = new Dictionary<GameObject, string>();
@@ -207,9 +208,9 @@ public class SceneVolumeExporter : MonoBehaviour {
 
                 samplingBounds = componentCollider.bounds;
                 sceneBounds.Encapsulate(samplingBounds);
-                samplePos.x = UnityEngine.Random.Range(samplingBounds.min[0], samplingBounds.max[0]);
-                samplePos.y = UnityEngine.Random.Range(samplingBounds.min[1], samplingBounds.max[1]);
-                samplePos.z = UnityEngine.Random.Range(samplingBounds.min[2], samplingBounds.max[2]);
+                samplePos.x = ((float)random.NextDouble()) * (samplingBounds.max[0] - samplingBounds.min[0]) + samplingBounds.min[0];
+                samplePos.y = ((float)random.NextDouble()) * (samplingBounds.max[1] - samplingBounds.min[1]) + samplingBounds.min[1];
+                samplePos.z = ((float)random.NextDouble()) * (samplingBounds.max[2] - samplingBounds.min[2]) + samplingBounds.min[2];
 
                 objid = "empty";
                 c = checkCollisionWithColliders(samplePos, allColliders, mask);
@@ -275,9 +276,9 @@ public class SceneVolumeExporter : MonoBehaviour {
             }
         }
         for (int i = 0; i < numPtsPerObj * 500; i++) {
-            samplePos.x = UnityEngine.Random.Range(sceneBounds.min[0], sceneBounds.max[0]);
-            samplePos.y = UnityEngine.Random.Range(sceneBounds.min[1], sceneBounds.max[1]);
-            samplePos.z = UnityEngine.Random.Range(sceneBounds.min[2], sceneBounds.max[2]);
+            samplePos.x = ((float)random.NextDouble()) * (sceneBounds.max[0] - sceneBounds.min[0]) + sceneBounds.min[0];
+            samplePos.y = ((float)random.NextDouble()) * (sceneBounds.max[1] - sceneBounds.min[1]) + sceneBounds.min[1];
+            samplePos.z = ((float)random.NextDouble()) * (sceneBounds.max[2] - sceneBounds.min[2]) + sceneBounds.min[2];
             // check
             objid = "empty";
             c = checkCollisionWithColliders(samplePos, allColliders, mask);
@@ -299,5 +300,4 @@ public class SceneVolumeExporter : MonoBehaviour {
         File.WriteAllLines(output_objid_pts_file, full_objid_pts);
         File.WriteAllLines(output_xyz_pts_file, full_xyz_pts);
     }
-
 }
