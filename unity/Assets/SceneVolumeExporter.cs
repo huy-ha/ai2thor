@@ -67,6 +67,26 @@ public class SceneVolumeExporter : MonoBehaviour {
         UnityEngine.SceneManagement.Scene scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
         int seed = Int32.Parse(System.IO.File.ReadAllLines("/home/huy/langmdp/ai2thor/seed.txt")[0]);
         string sceneName = scene.name;
+        List<string> receptacles = new List<string>();
+        foreach (Contains contain in GameObject.FindObjectsOfType<Contains>()) {
+            BoxCollider receptacleBox = contain.GetComponent<BoxCollider>();
+            string transform_matrix = receptacleBox.transform.localToWorldMatrix.GetRow(0).ToString("f8") +
+            receptacleBox.transform.localToWorldMatrix.GetRow(1).ToString("f8") +
+            receptacleBox.transform.localToWorldMatrix.GetRow(2).ToString("f8") +
+            receptacleBox.transform.localToWorldMatrix.GetRow(3).ToString("f8");
+            receptacles.Add(
+                contain.gameObject.GetComponentInParent<SimObjPhysics>().name +
+                "|" +
+                 transform_matrix +
+                "|" +
+                receptacleBox.size.ToString("f5") +
+                "|" +
+                receptacleBox.center.ToString("f5")
+            );
+        }
+        File.WriteAllLines(
+            "/home/huy/langmdp/ai2thor/" + sceneName + "_receptacles.txt",
+             receptacles);
         string directoryPath = "/home/huy/langmdp/ai2thor/" + sceneName + "_seed" + seed;
         if (!Directory.Exists(directoryPath)) {
             Directory.CreateDirectory(directoryPath);
