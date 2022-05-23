@@ -9,8 +9,8 @@ public class SceneVolumeExporter : MonoBehaviour {
     private int numPtsPerObj = 500;
 
     // https://answers.unity.com/questions/1600764/point-inside-mesh.html
-    public bool IsInCollider(MeshCollider other, Vector3 point) {
-        Vector3 from = (Vector3.up * 5000f);
+    public bool IsInCollider(MeshCollider other, Vector3 point, Vector3 fromDirection) {
+        Vector3 from = (fromDirection * 5000f);
         Vector3 dir = (point - from).normalized;
         float dist = Vector3.Distance(from, point);
         //fwd      
@@ -55,7 +55,11 @@ public class SceneVolumeExporter : MonoBehaviour {
             }
         }
         foreach (Collider c in colliders) {
-            if (c.GetType() == typeof(MeshCollider) ? IsInCollider((MeshCollider)c, pt) : false) {
+            if (c.GetType() == typeof(MeshCollider) ?
+            (IsInCollider((MeshCollider)c, pt, Vector3.up) &&
+            IsInCollider((MeshCollider)c, pt, Vector3.left) &&
+            IsInCollider((MeshCollider)c, pt, Vector3.forward))
+             : false) {
                 return c;
             }
         }
