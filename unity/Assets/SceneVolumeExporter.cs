@@ -157,9 +157,8 @@ public class SceneVolumeExporter : MonoBehaviour {
             if (objColliders.Length == 0) {
                 if (objMeshFilters.Length > 0) {
                     Debug.Log(o.name + " doesn't have colliders. Adding one based on mesh");
-                    MeshFilter meshFilter = objMeshFilters[0];
-                    MeshCollider mc = o.gameObject.AddComponent<MeshCollider>();
-                    mc.sharedMesh = meshFilter.mesh;
+                    MeshCollider mc = objMeshFilters[0].gameObject.AddComponent<MeshCollider>();
+                    mc.sharedMesh = objMeshFilters[0].mesh;
                     mc.convex = false;
                     objColliders = o.gameObject.GetComponentsInChildren<Collider>();
                 } else {
@@ -173,7 +172,7 @@ public class SceneVolumeExporter : MonoBehaviour {
                 if (objColliders[idx].GetType() != typeof(MeshCollider) && objMeshFilter) {
                     Debug.Log(objColliders[idx].name + " doesn't have mesh collider. Replacing.");
                     Destroy(objColliders[idx]);
-                    MeshCollider mc = o.gameObject.AddComponent<MeshCollider>();
+                    MeshCollider mc = objMeshFilter.gameObject.AddComponent<MeshCollider>();
                     mc.sharedMesh = objMeshFilter.mesh;
                     mc.convex = false;
                     objColliders[idx] = mc;
