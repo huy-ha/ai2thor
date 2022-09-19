@@ -58,7 +58,11 @@ public class SceneVolumeExporter : MonoBehaviour {
             if (c.GetType() == typeof(MeshCollider) ?
             (IsInCollider((MeshCollider)c, pt, Vector3.up) &&
             IsInCollider((MeshCollider)c, pt, Vector3.left) &&
-            IsInCollider((MeshCollider)c, pt, Vector3.forward))
+            IsInCollider((MeshCollider)c, pt, Vector3.forward)&&
+            IsInCollider((MeshCollider)c, pt, -Vector3.up) &&
+            IsInCollider((MeshCollider)c, pt, -Vector3.left) &&
+            IsInCollider((MeshCollider)c, pt, -Vector3.forward)
+            )
              : false) {
                 return c;
             }
@@ -148,13 +152,12 @@ public class SceneVolumeExporter : MonoBehaviour {
             } else {
                 sceneObjects.Add(child.gameObject, child.name);
             }
-
         }
         Dictionary<Collider, GameObject> colliderMap = new Dictionary<Collider, GameObject>();
         foreach (GameObject o in sceneObjects.Keys) {
-            Collider[] objColliders = o.GetComponentsInChildren<Collider>();
-            MeshFilter[] objMeshFilters = o.gameObject.GetComponentsInChildren<MeshFilter>();
+            Collider[] objColliders = o.GetComponentsInChildren<Collider>().Where(col => !col.isTrigger).ToArray();
             if (objColliders.Length == 0) {
+                MeshFilter[] objMeshFilters = o.gameObject.GetComponentsInChildren<MeshFilter>();
                 if (objMeshFilters.Length > 0) {
                     Debug.Log(o.name + " doesn't have colliders. Adding one based on mesh");
                     MeshCollider mc = objMeshFilters[0].gameObject.AddComponent<MeshCollider>();
