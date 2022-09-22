@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.94321895, g: 0.9682879, b: 0.77945185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11496,7 +11496,7 @@ GameObject:
   - component: {fileID: 958209407}
   - component: {fileID: 958209426}
   m_Layer: 8
-  m_Name: FP203:polySurface9
+  m_Name: DoorFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11517,7 +11517,7 @@ GameObject:
   - component: {fileID: 958209401}
   - component: {fileID: 958209419}
   m_Layer: 8
-  m_Name: FP203:polySurface8
+  m_Name: DoorFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11538,7 +11538,7 @@ GameObject:
   - component: {fileID: 958209403}
   - component: {fileID: 958209387}
   m_Layer: 8
-  m_Name: FP203:polySurface6
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11558,7 +11558,7 @@ GameObject:
   - component: {fileID: 958209460}
   - component: {fileID: 958209363}
   m_Layer: 8
-  m_Name: FP203:polySurface5
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -11578,7 +11578,7 @@ GameObject:
   - component: {fileID: 958209462}
   - component: {fileID: 958209383}
   m_Layer: 8
-  m_Name: FP203:polySurface4
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -11612,7 +11612,7 @@ GameObject:
   - component: {fileID: 958209468}
   - component: {fileID: 958209384}
   m_Layer: 8
-  m_Name: FP203:polySurface3
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -11633,7 +11633,7 @@ GameObject:
   - component: {fileID: 958209408}
   - component: {fileID: 958209416}
   m_Layer: 8
-  m_Name: FP203:polySurface1
+  m_Name: DoorFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11801,7 +11801,7 @@ GameObject:
   - component: {fileID: 958209382}
   - component: {fileID: 958209428}
   m_Layer: 8
-  m_Name: FP203:Cylinder.032
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11842,7 +11842,7 @@ GameObject:
   - component: {fileID: 958209510}
   - component: {fileID: 958209429}
   m_Layer: 8
-  m_Name: FP203:Cylinder.018
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11929,7 +11929,7 @@ GameObject:
   - component: {fileID: 958209540}
   - component: {fileID: 958209432}
   m_Layer: 8
-  m_Name: FP203:Cube.045
+  m_Name: StairRailings
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11948,7 +11948,7 @@ GameObject:
   - component: {fileID: 958209544}
   - component: {fileID: 958209543}
   m_Layer: 8
-  m_Name: ThisBlocksTheSunBecauseTheFirePlaceIsMissingNormals
+  m_Name: LightRay
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25390,6 +25390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3998015127657961326, guid: f00ae67761ebe064b91fce17572a703d,
+        type: 3}
+      propertyPath: m_Name
+      value: DiningTable
       objectReference: {fileID: 0}
     - target: {fileID: 3998015127657961326, guid: f00ae67761ebe064b91fce17572a703d,
         type: 3}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.0556667, g: 1.0320686, b: 1.0090238, a: 1}
+  m_IndirectSpecularColor: {r: 1.0556004, g: 1.0320573, b: 1.0089989, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -964,6 +964,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3192244707226534275, guid: dba15c2ebd55b8549af50af5d07ef7ac,
         type: 3}
+      propertyPath: m_Name
+      value: Cabinet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192244707226534275, guid: dba15c2ebd55b8549af50af5d07ef7ac,
+        type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1178,7 +1183,7 @@ GameObject:
   - component: {fileID: 144420459}
   - component: {fileID: 144420461}
   m_Layer: 8
-  m_Name: WallLetter
+  m_Name: WallDecoration
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4238,6 +4243,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7233921341653075542, guid: ae8cbdb040cc3c74593424bec56b4c0b,
         type: 3}
+      propertyPath: m_Name
+      value: Desk
+      objectReference: {fileID: 0}
+    - target: {fileID: 7233921341653075542, guid: ae8cbdb040cc3c74593424bec56b4c0b,
+        type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -5409,7 +5419,7 @@ GameObject:
   - component: {fileID: 684372789}
   - component: {fileID: 684372791}
   m_Layer: 8
-  m_Name: FP315:Cube.1726
+  m_Name: Poster
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5780,7 +5790,7 @@ GameObject:
   - component: {fileID: 689107215}
   - component: {fileID: 689107217}
   m_Layer: 8
-  m_Name: FP315:Cube.1724
+  m_Name: Poster
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7185,7 +7195,7 @@ GameObject:
   - component: {fileID: 904422084}
   - component: {fileID: 904422086}
   m_Layer: 8
-  m_Name: FP315:Cube.1725
+  m_Name: PhotoFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

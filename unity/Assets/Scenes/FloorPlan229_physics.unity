@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.0556667, g: 1.0320686, b: 1.0090238, a: 1}
+  m_IndirectSpecularColor: {r: 1.0533062, g: 1.0299526, b: 1.0065842, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4017,7 +4017,7 @@ GameObject:
   - component: {fileID: 379714314}
   - component: {fileID: 379714264}
   m_Layer: 8
-  m_Name: FP229:Cylinder.192
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4051,7 +4051,7 @@ GameObject:
   - component: {fileID: 379714320}
   - component: {fileID: 379714257}
   m_Layer: 8
-  m_Name: FP229:Cube.1226
+  m_Name: Patio
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4183,7 +4183,7 @@ GameObject:
   - component: {fileID: 379714326}
   - component: {fileID: 379714266}
   m_Layer: 8
-  m_Name: FP229:Cube.1214
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

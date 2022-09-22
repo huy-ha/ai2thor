@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
+  m_IndirectSpecularColor: {r: 0.94321895, g: 0.9682879, b: 0.77945185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3730,7 +3730,7 @@ GameObject:
   - component: {fileID: 277352458}
   - component: {fileID: 277352457}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -4855,7 +4855,7 @@ GameObject:
   - component: {fileID: 364903225}
   - component: {fileID: 364903227}
   m_Layer: 8
-  m_Name: Sphere.021
+  m_Name: Bowl
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -15537,7 +15537,7 @@ GameObject:
   - component: {fileID: 965867657}
   - component: {fileID: 965867656}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -15665,7 +15665,7 @@ GameObject:
   - component: {fileID: 976374380}
   - component: {fileID: 976374379}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -25812,7 +25812,7 @@ GameObject:
   - component: {fileID: 1554970923}
   - component: {fileID: 1554970922}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -31065,7 +31065,7 @@ GameObject:
   - component: {fileID: 1957905661}
   - component: {fileID: 1957905666}
   m_Layer: 8
-  m_Name: Sphere.019
+  m_Name: CounterTop
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -31107,7 +31107,7 @@ GameObject:
   - component: {fileID: 1957905663}
   - component: {fileID: 1957905727}
   m_Layer: 8
-  m_Name: Room.027
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3

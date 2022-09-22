@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.94321895, g: 0.9682879, b: 0.77945185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2081,7 +2081,7 @@ GameObject:
   - component: {fileID: 215532026}
   - component: {fileID: 215532028}
   m_Layer: 8
-  m_Name: FP416:polySurface80
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -6522,7 +6522,7 @@ GameObject:
   - component: {fileID: 669599702}
   - component: {fileID: 669599704}
   m_Layer: 8
-  m_Name: FP416:polySurface84
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -6742,7 +6742,7 @@ GameObject:
   - component: {fileID: 715048268}
   - component: {fileID: 715048270}
   m_Layer: 8
-  m_Name: FP416:polySurface81
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -7642,30 +7642,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1050279905}
     m_Modifications:
-    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1692822
-      objectReference: {fileID: 0}
-    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.27833512
-      objectReference: {fileID: 0}
-    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.05285334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.005587143
-      objectReference: {fileID: 0}
-    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.17216823
-      objectReference: {fileID: 0}
-    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.11413804
-      objectReference: {fileID: 0}
     - target: {fileID: 1013655288625828, guid: 48098ea6fcb7c4e98809051db97291a2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 64
@@ -7762,6 +7738,30 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsKinematic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1692822
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.27833512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.05285334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.005587143
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17216823
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768110643035840, guid: 28f76e04de332459e81f1814b505d6ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.11413804
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48098ea6fcb7c4e98809051db97291a2, type: 3}
@@ -8641,7 +8641,7 @@ GameObject:
   - component: {fileID: 924948891}
   - component: {fileID: 924948892}
   m_Layer: 8
-  m_Name: FP416:polySurface351
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9596,7 +9596,7 @@ GameObject:
   - component: {fileID: 981369973}
   - component: {fileID: 981369975}
   m_Layer: 8
-  m_Name: FP416:polySurface83
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -13745,7 +13745,7 @@ GameObject:
   - component: {fileID: 1426618580}
   - component: {fileID: 1426618581}
   m_Layer: 8
-  m_Name: FP416:polySurface106
+  m_Name: CounterTop
   m_TagString: SimObjPhysics
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15478,7 +15478,7 @@ GameObject:
   - component: {fileID: 1596340818}
   - component: {fileID: 1596340817}
   m_Layer: 0
-  m_Name: FP416:polySurface353
+  m_Name: WindowFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -18860,7 +18860,7 @@ GameObject:
   - component: {fileID: 1925879136}
   - component: {fileID: 1925879137}
   m_Layer: 8
-  m_Name: FP416:polySurface350
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.0556667, g: 1.0320686, b: 1.0090238, a: 1}
+  m_IndirectSpecularColor: {r: 1.0556004, g: 1.0320573, b: 1.0089989, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1766,7 +1766,7 @@ GameObject:
   - component: {fileID: 128894595}
   - component: {fileID: 128894601}
   m_Layer: 8
-  m_Name: FP221:Base1
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1787,7 +1787,7 @@ GameObject:
   - component: {fileID: 128894596}
   - component: {fileID: 128894602}
   m_Layer: 8
-  m_Name: FP221:Base
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4295,6 +4295,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443448729633212509, guid: 714b059514a2c034d9919b2a39fe934c,
+        type: 3}
+      propertyPath: m_Name
+      value: Sofa
       objectReference: {fileID: 0}
     - target: {fileID: 1443448729633212509, guid: 714b059514a2c034d9919b2a39fe934c,
         type: 3}
@@ -14936,7 +14941,7 @@ GameObject:
   - component: {fileID: 1309324772}
   - component: {fileID: 1309324774}
   m_Layer: 8
-  m_Name: FP221:Base26
+  m_Name: Painting
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

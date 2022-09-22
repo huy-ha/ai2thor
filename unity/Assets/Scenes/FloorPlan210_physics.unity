@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10663,6 +10663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5630463235645210688, guid: 952538f5268a8f2418c8356e961ea155,
         type: 3}
+      propertyPath: m_Name
+      value: Drape
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630463235645210688, guid: 952538f5268a8f2418c8356e961ea155,
+        type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -15654,7 +15659,7 @@ GameObject:
   - component: {fileID: 1429431169}
   - component: {fileID: 1429431141}
   m_Layer: 8
-  m_Name: FP210:Room.010
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16084,7 +16089,7 @@ GameObject:
   - component: {fileID: 1429431229}
   - component: {fileID: 1429431228}
   m_Layer: 8
-  m_Name: FP210:Cube.966
+  m_Name: Curtains
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -16103,7 +16108,7 @@ GameObject:
   - component: {fileID: 1429431235}
   - component: {fileID: 1429431234}
   m_Layer: 8
-  m_Name: FP210:Cube.965
+  m_Name: Curtains
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -16144,7 +16149,7 @@ GameObject:
   - component: {fileID: 1429431291}
   - component: {fileID: 1429431193}
   m_Layer: 8
-  m_Name: FP210:Cube.962
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

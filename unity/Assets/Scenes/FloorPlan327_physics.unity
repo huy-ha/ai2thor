@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.94321895, g: 0.9682879, b: 0.77945185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2627,7 +2627,7 @@ GameObject:
   - component: {fileID: 224333527}
   - component: {fileID: 224333528}
   m_Layer: 8
-  m_Name: FP327:Base
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9098,7 +9098,7 @@ GameObject:
   - component: {fileID: 839711890}
   - component: {fileID: 839711889}
   m_Layer: 8
-  m_Name: FP327:Base2
+  m_Name: Mirror
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

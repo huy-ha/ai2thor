@@ -1,40 +1,51 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.IO;
 using System.Linq;
-using System;
+using UnityEngine;
 
-public class SceneVolumeExporter : MonoBehaviour {
-    private int numPtsPerObj = 500;
+public class SceneVolumeExporter : MonoBehaviour
+{
+    private string
+        rootPath = "/home/huy/semantic-abstraction/groundtruth3dpoints/";
 
     // https://answers.unity.com/questions/1600764/point-inside-mesh.html
-    public bool IsInCollider(MeshCollider other, Vector3 point, Vector3 fromDirection) {
+    public bool
+    IsInCollider(MeshCollider other, Vector3 point, Vector3 fromDirection)
+    {
         Vector3 from = (fromDirection * 5000f);
         Vector3 dir = (point - from).normalized;
         float dist = Vector3.Distance(from, point);
-        //fwd      
+
+        //fwd
         int hit_count = Cast_Till(from, point, other);
+
         //back
         dir = (from - point).normalized;
         hit_count += Cast_Till(point, point + (dir * dist), other);
 
-        if (hit_count % 2 == 1) {
+        if (hit_count % 2 == 1)
+        {
             return (true);
         }
         return (false);
     }
 
-    int Cast_Till(Vector3 from, Vector3 to, MeshCollider other) {
+    int Cast_Till(Vector3 from, Vector3 to, MeshCollider other)
+    {
         int counter = 0;
         Vector3 dir = (to - from).normalized;
         float dist = Vector3.Distance(from, to);
         bool Break = false;
-        while (!Break) {
+        while (!Break)
+        {
             Break = true;
             RaycastHit[] hit = Physics.RaycastAll(from, dir, dist);
-            for (int tt = 0; tt < hit.Length; tt++) {
-                if (hit[tt].collider == other) {
+            for (int tt = 0; tt < hit.Length; tt++)
+            {
+                if (hit[tt].collider == other)
+                {
                     counter++;
                     from = hit[tt].point + dir.normalized * .001f;
                     dist = Vector3.Distance(from, to);
@@ -46,62 +57,131 @@ public class SceneVolumeExporter : MonoBehaviour {
         return (counter);
     }
 
-
-    Collider checkCollisionWithColliders(Vector3 pt, Collider[] colliders, LayerMask mask) {
+    Collider
+    checkCollisionWithColliders(
+        Vector3 pt,
+        Collider[] colliders,
+        LayerMask mask
+    )
+    {
         Collider[] hitColliders = Physics.OverlapSphere(pt, 0.001f, mask);
-        foreach (Collider c in hitColliders) {
-            if (colliders.Contains(c)) {
+        foreach (Collider c in hitColliders)
+        {
+            if (colliders.Contains(c))
+            {
                 return c;
             }
         }
-        foreach (Collider c in colliders) {
-            if (c.GetType() == typeof(MeshCollider) ?
-            (IsInCollider((MeshCollider)c, pt, Vector3.up) &&
-            IsInCollider((MeshCollider)c, pt, Vector3.left) &&
-            IsInCollider((MeshCollider)c, pt, Vector3.forward)&&
-            IsInCollider((MeshCollider)c, pt, -Vector3.up) &&
-            IsInCollider((MeshCollider)c, pt, -Vector3.left) &&
-            IsInCollider((MeshCollider)c, pt, -Vector3.forward)
+        foreach (Collider c in colliders)
+        {
+            if (
+                c.GetType() == typeof (MeshCollider)
+                    ? (
+                    IsInCollider((MeshCollider) c, pt, Vector3.up) &&
+                    IsInCollider((MeshCollider) c, pt, Vector3.left) &&
+                    IsInCollider((MeshCollider) c, pt, Vector3.forward) &&
+                    IsInCollider((MeshCollider) c, pt, -Vector3.up) &&
+                    IsInCollider((MeshCollider) c, pt, -Vector3.left) &&
+                    IsInCollider((MeshCollider) c, pt, -Vector3.forward)
+                    )
+                    : false
             )
-             : false) {
+            {
                 return c;
             }
         }
         return null;
     }
 
+    Collider
+    checkCollisionProbeWithColliders(
+        float radius,
+        Vector3 pt,
+        Collider[] colliders,
+        LayerMask mask
+    )
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(pt, radius, mask);
+        foreach (Collider c in hitColliders)
+        {
+            if (colliders.Contains(c))
+            {
+                return c;
+            }
+        }
+        return null;
+    }
+
+    List<float> RangeFloat(float min, float max, int steps)
+    {
+        return (List<float>)
+        Enumerable
+            .Range(0, steps)
+            .Select(i => min + (max - min) * ((float) i / (steps - 1)))
+            .ToList();
+    }
+
     // Start is called before the first frame update
-    void Start() {
-        UnityEngine.SceneManagement.Scene scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
-        int seed = Int32.Parse(System.IO.File.ReadAllLines("/home/huy/langmdp/ai2thor/seed.txt")[0]);
+    void Start()
+    {
+        UnityEngine.SceneManagement.Scene scene =
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+
+        // int seed = Int32.Parse(System.IO.File.ReadAllLines("/home/huy/langmdp/ai2thor/seed.txt")[0]);
         string sceneName = scene.name;
         List<string> receptacles = new List<string>();
-        foreach (Contains contain in GameObject.FindObjectsOfType<Contains>()) {
+        foreach (Contains contain in GameObject.FindObjectsOfType<Contains>())
+        {
             BoxCollider receptacleBox = contain.GetComponent<BoxCollider>();
-            string transform_matrix = receptacleBox.transform.localToWorldMatrix.GetRow(0).ToString("f8") +
-            receptacleBox.transform.localToWorldMatrix.GetRow(1).ToString("f8") +
-            receptacleBox.transform.localToWorldMatrix.GetRow(2).ToString("f8") +
-            receptacleBox.transform.localToWorldMatrix.GetRow(3).ToString("f8");
-            receptacles.Add(
-                contain.gameObject.GetComponentInParent<SimObjPhysics>().name +
+            string transform_matrix =
+                receptacleBox
+                    .transform
+                    .localToWorldMatrix
+                    .GetRow(0)
+                    .ToString("f8") +
+                receptacleBox
+                    .transform
+                    .localToWorldMatrix
+                    .GetRow(1)
+                    .ToString("f8") +
+                receptacleBox
+                    .transform
+                    .localToWorldMatrix
+                    .GetRow(2)
+                    .ToString("f8") +
+                receptacleBox
+                    .transform
+                    .localToWorldMatrix
+                    .GetRow(3)
+                    .ToString("f8");
+            receptacles
+                .Add(contain
+                    .gameObject
+                    .GetComponentInParent<SimObjPhysics>()
+                    .name +
                 "|" +
-                 transform_matrix +
+                transform_matrix +
                 "|" +
                 receptacleBox.size.ToString("f5") +
                 "|" +
-                receptacleBox.center.ToString("f5")
-            );
+                receptacleBox.center.ToString("f5"));
         }
-        File.WriteAllLines(
-            "/home/huy/langmdp/ai2thor/" + sceneName + "_receptacles.txt",
-             receptacles);
-        string directoryPath = "/home/huy/langmdp/ai2thor/" + sceneName + "_seed" + seed;
-        if (!Directory.Exists(directoryPath)) {
-            Directory.CreateDirectory(directoryPath);
+        File
+            .WriteAllLines(rootPath + sceneName + "_receptacles.txt",
+            receptacles);
+        string directoryPath = rootPath + sceneName;
+        if (!Directory.Exists(directoryPath))
+        {
+            Directory.CreateDirectory (directoryPath);
         }
-        string output_xyz_pts_file = directoryPath + "/full_xyz_pts.txt";
-        string output_objid_pts_file = directoryPath + "/full_objid_pts.txt";
-        if (File.Exists(output_xyz_pts_file) && File.Exists(output_objid_pts_file)) {
+        string output_xyz_pts_file = rootPath + sceneName + "/full_xyz_pts.txt";
+        string output_objid_pts_file =
+            rootPath + sceneName + "/full_objid_pts.txt";
+        if (
+            File.Exists(output_xyz_pts_file) &&
+            File.Exists(output_objid_pts_file)
+        )
+        {
             return;
         }
         Bounds sceneBounds = new Bounds(Vector3.zero, Vector3.zero);
@@ -112,218 +192,226 @@ public class SceneVolumeExporter : MonoBehaviour {
         Bounds samplingBounds;
         string objid;
         List<Collider> componentColliders;
-        var random = new System.Random(seed);
 
         // Get all scene objects
-        Dictionary<GameObject, string> sceneObjects = new Dictionary<GameObject, string>();
-        var sceneRootObjs = scene.GetRootGameObjects().ToList().ToDictionary(o => o.name, o => o);
+        Dictionary<GameObject, string> sceneObjects =
+            new Dictionary<GameObject, string>();
+        var sceneRootObjs =
+            scene
+                .GetRootGameObjects()
+                .ToList()
+                .ToDictionary(o => o.name, o => o);
         var objectsGameObject = sceneRootObjs["Objects"];
         var structuresGameObject = sceneRootObjs["Structure"];
-        foreach (Transform child in sceneRootObjs["Objects"].transform) {
-            if (!child.gameObject.activeSelf || child.name.ToLower().Contains("hideandseek") || child.name.ToLower().Contains("lightray"))
-                continue;
-            if (!child.gameObject.gameObject.GetComponent<SimObjPhysics>() &&
+        foreach (Transform child in sceneRootObjs["Objects"].transform)
+        {
+            if (
+                !child.gameObject.activeSelf ||
+                child.name.ToLower().Contains("hideandseek") ||
+                child.name.ToLower().Contains("lightray")
+            ) continue;
+            if (
+                !child.gameObject.gameObject.GetComponent<SimObjPhysics>() &&
                 !child.gameObject.gameObject.GetComponent<MeshFilter>() &&
-                child.gameObject.GetComponentsInChildren<MeshFilter>().Length > 0) {
-                foreach (var childMeshFilter in child.gameObject.GetComponentsInChildren<MeshFilter>()) {
-                    if (childMeshFilter.name.ToLower().Contains("mesh")) {
-                        sceneObjects.Add(childMeshFilter.gameObject, child.name);
-                    } else {
-                        sceneObjects.Add(childMeshFilter.gameObject, childMeshFilter.name);
+                child.gameObject.GetComponentsInChildren<MeshFilter>().Length >
+                0
+            )
+            {
+                foreach (var
+                    childMeshFilter
+                    in
+                    child.gameObject.GetComponentsInChildren<MeshFilter>()
+                )
+                {
+                    if (childMeshFilter.name.ToLower().Contains("mesh"))
+                    {
+                        sceneObjects
+                            .Add(childMeshFilter.gameObject, child.name);
+                    }
+                    else
+                    {
+                        sceneObjects
+                            .Add(childMeshFilter.gameObject,
+                            childMeshFilter.name);
                     }
                 }
-            } else {
+            }
+            else
+            {
                 sceneObjects.Add(child.gameObject, child.name);
             }
         }
-        foreach (Transform child in sceneRootObjs["Structure"].transform) {
-            if (!child.gameObject.activeSelf || child.name.ToLower().Contains("hideandseek") || child.name.ToLower().Contains("lightray"))
-                continue;
-            if (!child.gameObject.gameObject.GetComponent<SimObjPhysics>() &&
+        foreach (Transform child in sceneRootObjs["Structure"].transform)
+        {
+            if (
+                !child.gameObject.activeSelf ||
+                child.name.ToLower().Contains("hideandseek") ||
+                child.name.ToLower().Contains("lightray")
+            ) continue;
+            if (
+                !child.gameObject.gameObject.GetComponent<SimObjPhysics>() &&
                 !child.gameObject.gameObject.GetComponent<MeshFilter>() &&
-                child.gameObject.GetComponentsInChildren<MeshFilter>().Length > 0) {
-                foreach (var childMeshFilter in child.gameObject.GetComponentsInChildren<MeshFilter>()) {
-                    if (childMeshFilter.name.ToLower().Contains("mesh")) {
-                        sceneObjects.Add(childMeshFilter.gameObject, child.name);
-                    } else {
-                        sceneObjects.Add(childMeshFilter.gameObject, childMeshFilter.name);
+                child.gameObject.GetComponentsInChildren<MeshFilter>().Length >
+                0
+            )
+            {
+                foreach (var
+                    childMeshFilter
+                    in
+                    child.gameObject.GetComponentsInChildren<MeshFilter>()
+                )
+                {
+                    if (childMeshFilter.name.ToLower().Contains("mesh"))
+                    {
+                        sceneObjects
+                            .Add(childMeshFilter.gameObject, child.name);
+                    }
+                    else
+                    {
+                        sceneObjects
+                            .Add(childMeshFilter.gameObject,
+                            childMeshFilter.name);
                     }
                 }
-            } else {
+            }
+            else
+            {
                 sceneObjects.Add(child.gameObject, child.name);
             }
         }
-        Dictionary<Collider, GameObject> colliderMap = new Dictionary<Collider, GameObject>();
-        foreach (GameObject o in sceneObjects.Keys) {
-            Collider[] objColliders = o.GetComponentsInChildren<Collider>().Where(col => !col.isTrigger).ToArray();
-            if (objColliders.Length == 0) {
-                MeshFilter[] objMeshFilters = o.gameObject.GetComponentsInChildren<MeshFilter>();
-                if (objMeshFilters.Length > 0) {
-                    Debug.Log(o.name + " doesn't have colliders. Adding one based on mesh");
-                    MeshCollider mc = objMeshFilters[0].gameObject.AddComponent<MeshCollider>();
+        Dictionary<Collider, GameObject> colliderMap =
+            new Dictionary<Collider, GameObject>();
+        foreach (GameObject o in sceneObjects.Keys)
+        {
+            Collider[] objColliders =
+                o
+                    .GetComponentsInChildren<Collider>()
+                    .Where(col => !col.isTrigger)
+                    .ToArray();
+            if (objColliders.Length == 0)
+            {
+                MeshFilter[] objMeshFilters =
+                    o.gameObject.GetComponentsInChildren<MeshFilter>();
+                if (objMeshFilters.Length > 0)
+                {
+                    Debug
+                        .Log(o.name +
+                        " doesn't have colliders. Adding one based on mesh");
+                    MeshCollider mc =
+                        objMeshFilters[0]
+                            .gameObject
+                            .AddComponent<MeshCollider>();
                     mc.sharedMesh = objMeshFilters[0].mesh;
                     mc.convex = false;
-                    objColliders = o.gameObject.GetComponentsInChildren<Collider>();
-                } else {
+                    objColliders =
+                        o.gameObject.GetComponentsInChildren<Collider>();
+                }
+                else
+                {
                     continue;
                 }
             }
 
             // replace all simple colliders with mesh colliders if possible
-            for (int idx = 0; idx < objColliders.Length; idx++) {
-                MeshFilter objMeshFilter = objColliders[idx].gameObject.GetComponent<MeshFilter>();
-                if (objColliders[idx].GetType() != typeof(MeshCollider) && objMeshFilter) {
-                    Debug.Log(objColliders[idx].name + " doesn't have mesh collider. Replacing.");
+            for (int idx = 0; idx < objColliders.Length; idx++)
+            {
+                MeshFilter objMeshFilter =
+                    objColliders[idx].gameObject.GetComponent<MeshFilter>();
+                if (
+                    objColliders[idx].GetType() != typeof (MeshCollider) &&
+                    objMeshFilter
+                )
+                {
+                    Debug
+                        .Log(objColliders[idx].name +
+                        " doesn't have mesh collider. Replacing.");
                     Destroy(objColliders[idx]);
-                    MeshCollider mc = objMeshFilter.gameObject.AddComponent<MeshCollider>();
+                    MeshCollider mc =
+                        objMeshFilter.gameObject.AddComponent<MeshCollider>();
                     mc.sharedMesh = objMeshFilter.mesh;
                     mc.convex = false;
                     objColliders[idx] = mc;
                 }
             }
 
-
-            foreach (Collider childCollider in objColliders) {
-                if (childCollider.isTrigger)
-                    continue;
+            foreach (Collider childCollider in objColliders)
+            {
+                if (childCollider.isTrigger) continue;
                 Debug.Log(o.name + " has collider of " + childCollider.name);
-                if (!colliderMap.ContainsKey(childCollider)) {
-                    colliderMap.Add(childCollider, o);
-                } else {
+                if (!colliderMap.ContainsKey(childCollider))
+                {
+                    colliderMap.Add (childCollider, o);
+                }
+                else
+                {
                     colliderMap[childCollider] = o;
                 }
                 sceneBounds.Encapsulate(childCollider.bounds);
             }
         }
 
-        Collider componentCollider, c;
+        float voxSize = 0.02f;
+
+        // coarse grain scene grid first
+        var xs =
+            RangeFloat(sceneBounds.min[0],
+            sceneBounds.max[0],
+            (int)((sceneBounds.max[0] - sceneBounds.min[0]) / voxSize));
+        var ys =
+            RangeFloat(sceneBounds.min[1],
+            sceneBounds.max[1],
+            (int)((sceneBounds.max[1] - sceneBounds.min[1]) / voxSize));
+        var zs =
+            RangeFloat(sceneBounds.min[2],
+            sceneBounds.max[2],
+            (int)((sceneBounds.max[2] - sceneBounds.min[2]) / voxSize));
+
+        Collider
+            componentCollider,
+            c;
         SimObjPhysics[] simObjComponents;
         Collider[] allColliders = colliderMap.Keys.ToArray();
-        foreach (var kvp in sceneObjects) {
-            componentColliders = kvp.Key.GetComponentsInChildren<Collider>().ToList().FindAll(
-                col => !col.isTrigger);
-            if (componentColliders.Count == 0) {
-                Debug.LogWarning(kvp.Value + " has no collider");
-                continue;
-            }
-            int tries = 0;
-            int num_positives = 0;
-            int target = numPtsPerObj;
-            if (kvp.Key.tag == "Structure" || kvp.Value.Contains("Floor")
-            ) {
-                target *= 50;
-            } else if (kvp.Value.Contains("Table")
-              || kvp.Value.Contains("Drawer")
-              || kvp.Value.Contains("Cabinet")
-              || kvp.Value.Contains("Bathtub")
-              || kvp.Value.Contains("Toilet")
-              || kvp.Value.Contains("Desk")
-              || kvp.Value.Contains("Sink")
-              || kvp.Value.Contains("Chair")
-              || kvp.Value.Contains("Fridge")) {
-                target *= 20;
-            }
-
-            while (num_positives < target) {
-                tries += 1;
-                if (tries > target * 5) {
-                    Debug.Log("FAILED for " + kvp.Key.name + "| got " + num_positives);
-                    break;
-                }
-                componentCollider = componentColliders[random.Next(componentColliders.Count)];
-
-                samplingBounds = componentCollider.bounds;
-                sceneBounds.Encapsulate(samplingBounds);
-                samplePos.x = ((float)random.NextDouble()) * (samplingBounds.max[0] - samplingBounds.min[0]) + samplingBounds.min[0];
-                samplePos.y = ((float)random.NextDouble()) * (samplingBounds.max[1] - samplingBounds.min[1]) + samplingBounds.min[1];
-                samplePos.z = ((float)random.NextDouble()) * (samplingBounds.max[2] - samplingBounds.min[2]) + samplingBounds.min[2];
-
-                objid = "empty";
-                c = checkCollisionWithColliders(samplePos, allColliders, mask);
-                if (c && colliderMap.ContainsKey(c)) {
-                    simObjComponents = colliderMap[c].GetComponentsInChildren<SimObjPhysics>();
-                    if (simObjComponents.Length > 0) {
-                        objid = simObjComponents[0].objectID;
-                    } else {
-                        objid = sceneObjects[colliderMap[c]] + "|" +
-                    colliderMap[c].transform.position.x + "|" +
-                    +colliderMap[c].transform.position.y + "|" +
-                    colliderMap[c].transform.position.z;
-                    }
-                }
-                full_xyz_pts.Add(samplePos.x + "|" + samplePos.y + "|" + samplePos.z);
-                full_objid_pts.Add(objid);
-                Mesh m = null;
-                int faceIndex = -1;
-                if (c && componentColliders.Contains(c)) {
-                    num_positives += 1;
-                } else if (componentCollider.GetType() == typeof(MeshCollider)) {
-                    try {
-                        simObjComponents = colliderMap[componentCollider].GetComponentsInChildren<SimObjPhysics>();
-                        if (simObjComponents.Length > 0) {
+        foreach (var x in xs)
+        {
+            foreach (var y in ys)
+            {
+                foreach (var z in zs)
+                {
+                    objid = "empty";
+                    c =
+                        checkCollisionProbeWithColliders(// 0.6203504f * voxSize, //rough conversion from square to sphere with same volume
+                        voxSize,
+                        new Vector3(x, y, z),
+                        allColliders,
+                        mask);
+                    if (c && colliderMap.ContainsKey(c))
+                    {
+                        simObjComponents =
+                            colliderMap[c]
+                                .GetComponentsInChildren<SimObjPhysics>();
+                        if (simObjComponents.Length > 0)
+                        {
                             objid = simObjComponents[0].objectID;
-                        } else {
-                            objid = sceneObjects[colliderMap[componentCollider]] + "|" +
-                        colliderMap[componentCollider].transform.position.x + "|" +
-                        +colliderMap[componentCollider].transform.position.y + "|" +
-                        colliderMap[componentCollider].transform.position.z;
                         }
-                        // Is a mesh collider, collisions are hard.
-                        // Try adding points on vertices
-                        Matrix4x4 localToWorld = componentCollider.gameObject.transform.localToWorldMatrix;
-                        m = ((MeshCollider)componentCollider).sharedMesh;
-                        if (m == null || m.triangles.Length == 0 || m.vertices.Length == 0)
-                            continue;
-
-                        faceIndex = random.Next((int)Mathf.Floor(m.triangles.Length / 3));
-                        Vector3 v1, v2, v3;
-                        v1 = m.vertices[m.triangles[faceIndex * 3]];
-                        v2 = m.vertices[m.triangles[faceIndex * 3 + 1]];
-                        v3 = m.vertices[m.triangles[faceIndex * 3 + 2]];
-                        float r1 = Mathf.Sqrt((float)random.NextDouble());
-                        float r2 = (float)random.NextDouble();
-                        float m1 = 1 - r1;
-                        float m2 = r1 * (1 - r2);
-                        float m3 = r2 * r1;
-                        samplePos = (m1 * v1) + (m2 * v2) + (m3 * v3);
-                        samplePos = localToWorld.MultiplyPoint3x4(samplePos);
-                        full_xyz_pts.Add(samplePos.x + "|" + samplePos.y + "|" + samplePos.z);
-                        full_objid_pts.Add(objid);
-                        num_positives += 1;
-                    } catch (IndexOutOfRangeException e) {
-                        Debug.Log(e);
-                        Debug.Log("m.triangles: " + m.triangles.Length + " | " + faceIndex);
-                        Debug.Log("m.vertices: " + m.vertices.Length
-                        + " | [" + m.triangles[faceIndex * 3] + "]["
-                         + m.triangles[faceIndex * 3 + 1] + "]["
-                          + m.triangles[faceIndex * 3 + 2] + "]");
+                        else
+                        {
+                            objid =
+                                sceneObjects[colliderMap[c]] +
+                                "|" +
+                                colliderMap[c].transform.position.x +
+                                "|" +
+                                +colliderMap[c].transform.position.y +
+                                "|" +
+                                colliderMap[c].transform.position.z;
+                        }
                     }
-                }
-            }
-        }
-        for (int i = 0; i < numPtsPerObj * 500; i++) {
-            samplePos.x = ((float)random.NextDouble()) * (sceneBounds.max[0] - sceneBounds.min[0]) + sceneBounds.min[0];
-            samplePos.y = ((float)random.NextDouble()) * (sceneBounds.max[1] - sceneBounds.min[1]) + sceneBounds.min[1];
-            samplePos.z = ((float)random.NextDouble()) * (sceneBounds.max[2] - sceneBounds.min[2]) + sceneBounds.min[2];
-            // check
-            objid = "empty";
-            c = checkCollisionWithColliders(samplePos, allColliders, mask);
-            if (c && colliderMap.ContainsKey(c)) {
-                simObjComponents = colliderMap[c].GetComponentsInChildren<SimObjPhysics>();
-                if (simObjComponents.Length > 0) {
-                    objid = simObjComponents[0].objectID;
-                } else {
-                    objid = sceneObjects[colliderMap[c]] + "|" +
-                colliderMap[c].transform.position.x + "|" +
-                +colliderMap[c].transform.position.y + "|" +
-                colliderMap[c].transform.position.z;
-                }
-            }
 
-            full_xyz_pts.Add(samplePos.x + "|" + samplePos.y + "|" + samplePos.z);
-            full_objid_pts.Add(objid);
+                    full_xyz_pts.Add(x + "|" + y + "|" + z);
+                    full_objid_pts.Add (objid);
+                }
+            }
         }
-        File.WriteAllLines(output_objid_pts_file, full_objid_pts);
-        File.WriteAllLines(output_xyz_pts_file, full_xyz_pts);
+        File.WriteAllLines (output_objid_pts_file, full_objid_pts);
+        File.WriteAllLines (output_xyz_pts_file, full_xyz_pts);
     }
 }

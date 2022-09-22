@@ -15,7 +15,7 @@ public class Build {
     // the Standalone platform get used for CloudRendering
     static void InitializeCloudRendering() {
         PlayerSettings.SetApiCompatibilityLevel(BuildTargetGroup.CloudRendering, PlayerSettings.GetApiCompatibilityLevel(BuildTargetGroup.Standalone));
-        var graphicsTiers = new List<GraphicsTier>(){GraphicsTier.Tier1, GraphicsTier.Tier2, GraphicsTier.Tier3};
+        var graphicsTiers = new List<GraphicsTier>() { GraphicsTier.Tier1, GraphicsTier.Tier2, GraphicsTier.Tier3 };
         foreach (var graphicsTier in graphicsTiers) {
             EditorGraphicsSettings.SetTierSettings(
                 BuildTargetGroup.CloudRendering,
@@ -26,7 +26,7 @@ public class Build {
     }
 
     static void OSXIntel64() {
-        build(GetBuildName(),  BuildTargetGroup.Standalone, BuildTarget.StandaloneOSX);
+        build(GetBuildName(), BuildTargetGroup.Standalone, BuildTarget.StandaloneOSX);
     }
 
     static string GetBuildName() {
@@ -46,7 +46,7 @@ public class Build {
         // USIM_USE_... scripting defines are required
         // to disable the native PNG and JPEG encoders present in the simulation capture package
         // if these defines are not provide the WebGL build will fail
-        build(GetBuildName(), BuildTargetGroup.WebGL, BuildTarget.WebGL, new string[]{"USIM_USE_BUILTIN_JPG_ENCODER", "USIM_USE_BUILTIN_PNG_ENCODER"});
+        build(GetBuildName(), BuildTargetGroup.WebGL, BuildTarget.WebGL, new string[] { "USIM_USE_BUILTIN_JPG_ENCODER", "USIM_USE_BUILTIN_PNG_ENCODER" });
     }
 
     static void buildResourceAssetJson() {
@@ -54,7 +54,7 @@ public class Build {
         manager.BuildCatalog();
     }
 
-    static void build(string buildName, BuildTargetGroup targetGroup, BuildTarget target, string[] extraScriptingDefines=null) {
+    static void build(string buildName, BuildTargetGroup targetGroup, BuildTarget target, string[] extraScriptingDefines = null) {
         buildResourceAssetJson();
 
         var defines = GetDefineSymbolsFromEnv();
@@ -76,11 +76,11 @@ public class Build {
         }
         Debug.Log("Build options " + options);
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
-        if (extraScriptingDefines != null) {
-            buildPlayerOptions.extraScriptingDefines = extraScriptingDefines;
-        }
+        // if (extraScriptingDefines != null) {
+        //     buildPlayerOptions.extraScriptingDefines = extraScriptingDefines;
+        // }
         buildPlayerOptions.scenes = scenes.ToArray();
-        buildPlayerOptions.locationPathName = buildName;
+        buildPlayerOptions.locationPathName = "custom";
         buildPlayerOptions.target = target;
         buildPlayerOptions.options = options;
         EditorUserBuildSettings.SwitchActiveBuildTarget(targetGroup, target);

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7170012, g: 0.7306422, b: 0.7505908, a: 1}
+  m_IndirectSpecularColor: {r: 0.7183862, g: 0.7320165, b: 0.7521288, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 49837085}
   - component: {fileID: 49837084}
   m_Layer: 8
-  m_Name: FP225:polySurface4 (1)
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -4459,7 +4459,7 @@ GameObject:
   - component: {fileID: 493332899}
   - component: {fileID: 493332898}
   m_Layer: 8
-  m_Name: FP225:polySurface3
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -6360,7 +6360,7 @@ GameObject:
   - component: {fileID: 737224730}
   - component: {fileID: 737224717}
   m_Layer: 8
-  m_Name: FP225:polySurface8
+  m_Name: FirePlace
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6380,7 +6380,7 @@ GameObject:
   - component: {fileID: 737224779}
   - component: {fileID: 737224718}
   m_Layer: 8
-  m_Name: FP225:polySurface7
+  m_Name: FirePlace
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6401,7 +6401,7 @@ GameObject:
   - component: {fileID: 737224731}
   - component: {fileID: 737224713}
   m_Layer: 8
-  m_Name: FP225:polySurface6
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6421,7 +6421,7 @@ GameObject:
   - component: {fileID: 737224787}
   - component: {fileID: 737224703}
   m_Layer: 8
-  m_Name: FP225:polySurface3
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -6441,7 +6441,7 @@ GameObject:
   - component: {fileID: 737224790}
   - component: {fileID: 737224712}
   m_Layer: 8
-  m_Name: FP225:polySurface4
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -6690,7 +6690,7 @@ GameObject:
   - component: {fileID: 737224845}
   - component: {fileID: 737224844}
   m_Layer: 8
-  m_Name: FP225:Cube.1168
+  m_Name: Curtains
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -6730,7 +6730,7 @@ GameObject:
   - component: {fileID: 737224753}
   - component: {fileID: 737224759}
   m_Layer: 8
-  m_Name: FP225:Cylinder.174
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20199,7 +20199,7 @@ GameObject:
   - component: {fileID: 1890936778}
   - component: {fileID: 1890936777}
   m_Layer: 8
-  m_Name: FP225:Cube.1168
+  m_Name: Curtains
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

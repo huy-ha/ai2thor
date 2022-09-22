@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26303515, g: 0.6208292, b: 1.0065842, a: 1}
+  m_IndirectSpecularColor: {r: 0.2635811, g: 0.6220585, b: 1.0089989, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4975,7 +4975,7 @@ GameObject:
   - component: {fileID: 334515306}
   - component: {fileID: 334515307}
   m_Layer: 8
-  m_Name: FP422:polySurface369
+  m_Name: DoorFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11756,7 +11756,7 @@ GameObject:
   - component: {fileID: 947973281}
   - component: {fileID: 947973283}
   m_Layer: 8
-  m_Name: FP422:polySurface103
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -15136,7 +15136,7 @@ GameObject:
   - component: {fileID: 1238821869}
   - component: {fileID: 1238821871}
   m_Layer: 8
-  m_Name: FP422:polySurface104
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

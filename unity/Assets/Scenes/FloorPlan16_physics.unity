@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
+  m_IndirectSpecularColor: {r: 0.94321895, g: 0.9682879, b: 0.77945185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6939,7 +6939,7 @@ GameObject:
   - component: {fileID: 203014016}
   - component: {fileID: 203014015}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -18437,7 +18437,7 @@ GameObject:
   - component: {fileID: 638145407}
   - component: {fileID: 638145406}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -20999,7 +20999,7 @@ GameObject:
   - component: {fileID: 739877804}
   - component: {fileID: 739877803}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -27773,7 +27773,7 @@ GameObject:
   - component: {fileID: 981745957}
   - component: {fileID: 981745960}
   m_Layer: 8
-  m_Name: Room.039
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -33675,7 +33675,7 @@ GameObject:
   - component: {fileID: 1190307867}
   - component: {fileID: 1190307866}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -33826,7 +33826,7 @@ GameObject:
   - component: {fileID: 1192545879}
   - component: {fileID: 1192545878}
   m_Layer: 8
-  m_Name: Cylinder.056
+  m_Name: Cans
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -40488,7 +40488,7 @@ GameObject:
   - component: {fileID: 1436253659}
   - component: {fileID: 1436253658}
   m_Layer: 8
-  m_Name: Cylinder.054
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -46820,7 +46820,7 @@ GameObject:
   - component: {fileID: 1608115206}
   - component: {fileID: 1608115205}
   m_Layer: 8
-  m_Name: Cylinder.057
+  m_Name: PaperTowel
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3

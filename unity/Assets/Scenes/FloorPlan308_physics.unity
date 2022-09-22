@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.0556667, g: 1.0320686, b: 1.0090238, a: 1}
+  m_IndirectSpecularColor: {r: 1.0556004, g: 1.0320573, b: 1.0089989, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3195,7 +3195,7 @@ GameObject:
   - component: {fileID: 396679831}
   - component: {fileID: 396679830}
   m_Layer: 0
-  m_Name: FP308:Cube.1598
+  m_Name: PhotoBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4272,7 +4272,7 @@ GameObject:
   - component: {fileID: 505126760}
   - component: {fileID: 505126759}
   m_Layer: 0
-  m_Name: FP308:Cube.1599
+  m_Name: PhotoBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17565,7 +17565,7 @@ GameObject:
   - component: {fileID: 2073717689}
   - component: {fileID: 2073717690}
   m_Layer: 8
-  m_Name: FP308:CeilingMat
+  m_Name: FP308:Ceiling
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

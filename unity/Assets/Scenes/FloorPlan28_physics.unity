@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.70383745, g: 0.7173319, b: 0.7360205, a: 1}
+  m_IndirectSpecularColor: {r: 0.7183862, g: 0.7320165, b: 0.7521288, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10596,7 +10596,7 @@ GameObject:
   - component: {fileID: 610937694}
   - component: {fileID: 610937696}
   m_Layer: 0
-  m_Name: Sphere.012
+  m_Name: LightFixture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -17175,7 +17175,7 @@ GameObject:
   - component: {fileID: 982276986}
   - component: {fileID: 982277023}
   m_Layer: 8
-  m_Name: Room
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -22016,7 +22016,7 @@ GameObject:
   - component: {fileID: 1151303318}
   - component: {fileID: 1151303317}
   m_Layer: 0
-  m_Name: Sphere.008
+  m_Name: KitchenSink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3

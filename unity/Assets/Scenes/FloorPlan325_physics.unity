@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1925,7 +1925,7 @@ GameObject:
   - component: {fileID: 158618836}
   - component: {fileID: 158618838}
   m_Layer: 8
-  m_Name: FP325:Cube.1303
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -9861,7 +9861,7 @@ GameObject:
   - component: {fileID: 993095939}
   - component: {fileID: 993095941}
   m_Layer: 8
-  m_Name: FP325:Cube.1344
+  m_Name: PhotoFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -10031,7 +10031,7 @@ GameObject:
   - component: {fileID: 1009184735}
   - component: {fileID: 1009184737}
   m_Layer: 8
-  m_Name: FP325:Cube.1359
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15099,7 +15099,7 @@ GameObject:
   - component: {fileID: 1438789624}
   - component: {fileID: 1438789626}
   m_Layer: 8
-  m_Name: FP325:Cube.1342
+  m_Name: PhotoFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -22466,7 +22466,7 @@ GameObject:
   - component: {fileID: 2105848020}
   - component: {fileID: 2105848022}
   m_Layer: 8
-  m_Name: FP325:Cube.1302
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

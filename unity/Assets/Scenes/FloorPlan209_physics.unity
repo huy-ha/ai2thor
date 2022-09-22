@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
+  m_IndirectSpecularColor: {r: 0.94321895, g: 0.9682879, b: 0.77945185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11186,7 +11186,7 @@ GameObject:
   - component: {fileID: 1136025096}
   - component: {fileID: 1136025105}
   m_Layer: 8
-  m_Name: FP209:polySurface81
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11207,7 +11207,7 @@ GameObject:
   - component: {fileID: 1136025097}
   - component: {fileID: 1136025106}
   m_Layer: 8
-  m_Name: FP209:polySurface80
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11228,7 +11228,7 @@ GameObject:
   - component: {fileID: 1136025098}
   - component: {fileID: 1136025107}
   m_Layer: 8
-  m_Name: FP209:polySurface79
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11249,7 +11249,7 @@ GameObject:
   - component: {fileID: 1136025099}
   - component: {fileID: 1136025109}
   m_Layer: 8
-  m_Name: FP209:polySurface78
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11270,7 +11270,7 @@ GameObject:
   - component: {fileID: 1136025100}
   - component: {fileID: 1136025110}
   m_Layer: 8
-  m_Name: FP209:polySurface77
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11291,7 +11291,7 @@ GameObject:
   - component: {fileID: 1136025101}
   - component: {fileID: 1136025111}
   m_Layer: 8
-  m_Name: FP209:polySurface6
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11312,7 +11312,7 @@ GameObject:
   - component: {fileID: 1136025102}
   - component: {fileID: 1136025112}
   m_Layer: 8
-  m_Name: FP209:polySurface4
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11333,7 +11333,7 @@ GameObject:
   - component: {fileID: 1136025103}
   - component: {fileID: 1136025113}
   m_Layer: 8
-  m_Name: FP209:polySurface3
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11353,7 +11353,7 @@ GameObject:
   - component: {fileID: 1136025151}
   - component: {fileID: 1136025080}
   m_Layer: 8
-  m_Name: FP209:polySurface70
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -11373,7 +11373,7 @@ GameObject:
   - component: {fileID: 1136025153}
   - component: {fileID: 1136025081}
   m_Layer: 8
-  m_Name: FP209:polySurface2
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -11393,7 +11393,7 @@ GameObject:
   - component: {fileID: 1136025157}
   - component: {fileID: 1136025082}
   m_Layer: 8
-  m_Name: FP209:polySurface45
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -11413,7 +11413,7 @@ GameObject:
   - component: {fileID: 1136025159}
   - component: {fileID: 1136025104}
   m_Layer: 8
-  m_Name: FP209:polySurface1
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

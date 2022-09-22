@@ -5145,6 +5145,10 @@ PrefabInstance:
       value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 1816707902670084, guid: 899082a41b8354a93b913729ee68d417, type: 3}
+      propertyPath: m_Name
+      value: Pepper
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816707902670084, guid: 899082a41b8354a93b913729ee68d417, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -11427,7 +11431,7 @@ GameObject:
   - component: {fileID: 564375624}
   - component: {fileID: 564375623}
   m_Layer: 8
-  m_Name: SugarFill
+  m_Name: Sugar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11510,7 +11514,7 @@ GameObject:
   - component: {fileID: 568055049}
   - component: {fileID: 568055048}
   m_Layer: 8
-  m_Name: SaltFill.001
+  m_Name: Salt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21350,7 +21354,7 @@ GameObject:
   - component: {fileID: 1084253430}
   - component: {fileID: 1084253429}
   m_Layer: 8
-  m_Name: SaltFill
+  m_Name: Salt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22174,7 +22178,7 @@ GameObject:
   - component: {fileID: 1121603883}
   - component: {fileID: 1121603882}
   m_Layer: 8
-  m_Name: SugarFill.002
+  m_Name: Salt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35702,6 +35706,10 @@ PrefabInstance:
     - target: {fileID: 1587498437168326, guid: 00420b49c8585450f8f54739af302931, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597706590449832, guid: 00420b49c8585450f8f54739af302931, type: 3}
+      propertyPath: m_Name
+      value: Salt
       objectReference: {fileID: 0}
     - target: {fileID: 1597706590449832, guid: 00420b49c8585450f8f54739af302931, type: 3}
       propertyPath: m_NavMeshLayer

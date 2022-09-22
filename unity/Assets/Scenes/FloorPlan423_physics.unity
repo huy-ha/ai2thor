@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26360312, g: 0.62206274, b: 1.0090238, a: 1}
+  m_IndirectSpecularColor: {r: 0.2635811, g: 0.6220585, b: 1.0089989, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3953,7 +3953,7 @@ GameObject:
   - component: {fileID: 202255706}
   - component: {fileID: 202255707}
   m_Layer: 8
-  m_Name: FP423:polySurface372
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24732,7 +24732,7 @@ GameObject:
   - component: {fileID: 1483672917}
   - component: {fileID: 1483672919}
   m_Layer: 8
-  m_Name: FP423:polySurface105
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -26183,7 +26183,7 @@ GameObject:
   - component: {fileID: 1544619139}
   - component: {fileID: 1544619138}
   m_Layer: 0
-  m_Name: FP423:polySurface374
+  m_Name: ShowerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -26357,7 +26357,7 @@ GameObject:
   - component: {fileID: 1554409496}
   - component: {fileID: 1554409498}
   m_Layer: 8
-  m_Name: FP423:Cube.1982
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31199,7 +31199,7 @@ GameObject:
   - component: {fileID: 1865741950}
   - component: {fileID: 1865741952}
   m_Layer: 8
-  m_Name: FP423:Cube.1983
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32035,7 +32035,7 @@ GameObject:
   - component: {fileID: 1923245720}
   - component: {fileID: 1923245722}
   m_Layer: 8
-  m_Name: FP423:polySurface109
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -35046,7 +35046,7 @@ GameObject:
   - component: {fileID: 2133479349}
   - component: {fileID: 2133479350}
   m_Layer: 0
-  m_Name: FP423:polySurface387
+  m_Name: CounterTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

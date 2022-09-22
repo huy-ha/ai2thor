@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7170012, g: 0.7306422, b: 0.7505908, a: 1}
+  m_IndirectSpecularColor: {r: 0.7183862, g: 0.7320165, b: 0.7521288, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 31156492}
   - component: {fileID: 31156494}
   m_Layer: 8
-  m_Name: FP411:Cube.1881
+  m_Name: PhotoBoard
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1260,6 +1260,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1809139788}
     m_Modifications:
+    - target: {fileID: 1158336487128146631, guid: ff5acccc6609d4b57b5b916ed74111a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Faucet
+      objectReference: {fileID: 0}
     - target: {fileID: 1158336487128146631, guid: ff5acccc6609d4b57b5b916ed74111a4,
         type: 3}
       propertyPath: m_NavMeshLayer
@@ -5891,7 +5896,7 @@ GameObject:
   - component: {fileID: 423517727}
   - component: {fileID: 423517726}
   m_Layer: 8
-  m_Name: FP411:polySurface59
+  m_Name: Window
   m_TagString: SimObjPhysics
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -8227,7 +8232,7 @@ GameObject:
   - component: {fileID: 603119054}
   - component: {fileID: 603119053}
   m_Layer: 8
-  m_Name: FP411:polySurface61
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -8451,7 +8456,7 @@ GameObject:
   - component: {fileID: 624299553}
   - component: {fileID: 624299555}
   m_Layer: 8
-  m_Name: FP411:Cube.1869
+  m_Name: BathTub
   m_TagString: SimObjPhysics
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -13161,7 +13166,7 @@ GameObject:
   - component: {fileID: 964269796}
   - component: {fileID: 964269798}
   m_Layer: 0
-  m_Name: FP411:polySurface107
+  m_Name: Shower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17986,7 +17991,7 @@ GameObject:
   - component: {fileID: 1356899336}
   - component: {fileID: 1356899335}
   m_Layer: 8
-  m_Name: FP411:polySurface63
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -18311,70 +18316,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1809139788}
     m_Modifications:
-    - target: {fileID: 4804771869887026, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.24794886
-      objectReference: {fileID: 0}
-    - target: {fileID: 4804771869887026, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3903048
-      objectReference: {fileID: 0}
-    - target: {fileID: 4804771869887026, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.18659143
-      objectReference: {fileID: 0}
-    - target: {fileID: 4804771869887026, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.009300172
-      objectReference: {fileID: 0}
-    - target: {fileID: 4804771869887026, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.23379233
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.784
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.06732557
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
     - target: {fileID: 1069350916249998, guid: f32ac8351674d497d85fcf5fa7247686, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 64
@@ -18486,6 +18427,70 @@ PrefabInstance:
     - target: {fileID: 4360539769873112, guid: f32ac8351674d497d85fcf5fa7247686, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4804771869887026, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.24794886
+      objectReference: {fileID: 0}
+    - target: {fileID: 4804771869887026, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3903048
+      objectReference: {fileID: 0}
+    - target: {fileID: 4804771869887026, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.18659143
+      objectReference: {fileID: 0}
+    - target: {fileID: 4804771869887026, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.009300172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4804771869887026, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.23379233
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.784
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06732557
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823472791929782, guid: a2e4376b482d7470ebd378eacae738e4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32ac8351674d497d85fcf5fa7247686, type: 3}
@@ -19307,7 +19312,7 @@ GameObject:
   - component: {fileID: 1448803173}
   - component: {fileID: 1448803172}
   m_Layer: 0
-  m_Name: FP411:polySurface1
+  m_Name: Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -20594,7 +20599,7 @@ GameObject:
   - component: {fileID: 1651541422}
   - component: {fileID: 1651541425}
   m_Layer: 8
-  m_Name: FP410:polySurface177
+  m_Name: DoorKnob
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22317,7 +22322,7 @@ GameObject:
   - component: {fileID: 1731751070}
   - component: {fileID: 1731751073}
   m_Layer: 8
-  m_Name: FP410:polySurface173
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25346,7 +25351,7 @@ GameObject:
   - component: {fileID: 1942106138}
   - component: {fileID: 1942106137}
   m_Layer: 8
-  m_Name: FP411:polySurface60
+  m_Name: WindowFrame
   m_TagString: SimObjPhysics
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -26275,7 +26280,7 @@ GameObject:
   - component: {fileID: 2027328997}
   - component: {fileID: 2027329001}
   m_Layer: 8
-  m_Name: FP410:polySurface175
+  m_Name: DoorFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26385,7 +26390,7 @@ GameObject:
   - component: {fileID: 2030943634}
   - component: {fileID: 2030943633}
   m_Layer: 0
-  m_Name: FP411:polySurface325
+  m_Name: ShowerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -26638,7 +26643,7 @@ GameObject:
   - component: {fileID: 2054862678}
   - component: {fileID: 2054862677}
   m_Layer: 0
-  m_Name: FP411:polySurface324
+  m_Name: ShowerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -27604,7 +27609,7 @@ GameObject:
   - component: {fileID: 2122767403}
   - component: {fileID: 2122767405}
   m_Layer: 0
-  m_Name: FP411:polySurface106
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

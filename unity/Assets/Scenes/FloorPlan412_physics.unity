@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7170012, g: 0.7306422, b: 0.7505908, a: 1}
+  m_IndirectSpecularColor: {r: 0.7183862, g: 0.7320165, b: 0.7521288, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 15201798}
   - component: {fileID: 15201799}
   m_Layer: 8
-  m_Name: FP412:polySurface349
+  m_Name: DoorFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 78390366}
   - component: {fileID: 78390365}
   m_Layer: 8
-  m_Name: FP412:polySurface332
+  m_Name: Shower
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -2325,7 +2325,7 @@ GameObject:
   - component: {fileID: 185435296}
   - component: {fileID: 185435295}
   m_Layer: 0
-  m_Name: FP412:polySurface329
+  m_Name: ShowerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -5357,7 +5357,7 @@ GameObject:
   - component: {fileID: 419514102}
   - component: {fileID: 419514104}
   m_Layer: 0
-  m_Name: FP412:polySurface108
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5712,7 +5712,7 @@ GameObject:
   - component: {fileID: 452446607}
   - component: {fileID: 452446608}
   m_Layer: 8
-  m_Name: FP412:polySurface106
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7497,7 +7497,7 @@ GameObject:
   - component: {fileID: 566472801}
   - component: {fileID: 566472800}
   m_Layer: 8
-  m_Name: FP412:polySurface110
+  m_Name: Cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -10740,7 +10740,7 @@ GameObject:
   - component: {fileID: 803332883}
   - component: {fileID: 803332885}
   m_Layer: 0
-  m_Name: FP412:polySurface107
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13790,7 +13790,7 @@ GameObject:
   - component: {fileID: 1048114049}
   - component: {fileID: 1048114051}
   m_Layer: 8
-  m_Name: FP412:Cube.1882
+  m_Name: PhotoBoard
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19881,7 +19881,7 @@ GameObject:
   - component: {fileID: 1573233425}
   - component: {fileID: 1573233424}
   m_Layer: 8
-  m_Name: FP412:polySurface110
+  m_Name: Cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

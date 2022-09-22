@@ -11726,7 +11726,7 @@ GameObject:
   - component: {fileID: 464516682}
   - component: {fileID: 464516685}
   m_Layer: 8
-  m_Name: Room.034
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -16450,7 +16450,7 @@ GameObject:
   - component: {fileID: 705239590}
   - component: {fileID: 705239594}
   m_Layer: 8
-  m_Name: Room.028
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2635464, g: 0.6218695, b: 1.0084763, a: 1}
+  m_IndirectSpecularColor: {r: 0.2635811, g: 0.6220585, b: 1.0089989, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -990,7 +990,7 @@ GameObject:
   - component: {fileID: 81360450}
   - component: {fileID: 81360452}
   m_Layer: 8
-  m_Name: FP420:polySurface95
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -4074,9 +4074,9 @@ Transform:
   - {fileID: 452896055}
   - {fileID: 385675853}
   - {fileID: 2059433729}
+  - {fileID: 1623083632}
   - {fileID: 1025138516052932539}
   - {fileID: 5372209578323052106}
-  - {fileID: 1623083632}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8583,7 +8583,7 @@ GameObject:
   - component: {fileID: 1183390857}
   - component: {fileID: 1183390859}
   m_Layer: 0
-  m_Name: FP420:polySurface107
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11473,7 +11473,7 @@ GameObject:
   - component: {fileID: 1470680264}
   - component: {fileID: 1470680266}
   m_Layer: 8
-  m_Name: FP420:Cube.1924
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12084,7 +12084,7 @@ GameObject:
   - component: {fileID: 1572353238}
   - component: {fileID: 1572353240}
   m_Layer: 8
-  m_Name: FP420:polySurface101
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -13000,7 +13000,7 @@ Transform:
   - {fileID: 932097160}
   - {fileID: 1645900560}
   m_Father: {fileID: 534817873}
-  m_RootOrder: 26
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1623083633
 Rigidbody:
@@ -15887,7 +15887,7 @@ GameObject:
   - component: {fileID: 2100659324}
   - component: {fileID: 2100659325}
   m_Layer: 8
-  m_Name: FP420:polySurface366
+  m_Name: DoorFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

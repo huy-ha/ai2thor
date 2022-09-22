@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26360312, g: 0.62206274, b: 1.0090238, a: 1}
+  m_IndirectSpecularColor: {r: 0.2635811, g: 0.6220585, b: 1.0089989, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1189,7 +1189,7 @@ GameObject:
   - component: {fileID: 108355931}
   - component: {fileID: 108355930}
   m_Layer: 0
-  m_Name: FP417:polySurface355
+  m_Name: ShowerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -5277,7 +5277,7 @@ GameObject:
   - component: {fileID: 415325281}
   - component: {fileID: 415325280}
   m_Layer: 0
-  m_Name: FP417:polySurface360
+  m_Name: Shower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5361,7 +5361,7 @@ GameObject:
   - component: {fileID: 417912771}
   - component: {fileID: 417912773}
   m_Layer: 8
-  m_Name: FP417:polySurface89
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -6716,7 +6716,7 @@ GameObject:
   - component: {fileID: 548832958}
   - component: {fileID: 548832960}
   m_Layer: 0
-  m_Name: FP417:polySurface106
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11322,7 +11322,7 @@ GameObject:
   - component: {fileID: 918684748}
   - component: {fileID: 918684749}
   m_Layer: 8
-  m_Name: FP417:polySurface387 1
+  m_Name: CounterTop
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11494,7 +11494,7 @@ GameObject:
   - component: {fileID: 928134886}
   - component: {fileID: 928134888}
   m_Layer: 8
-  m_Name: FP417:polySurface358
+  m_Name: Shower
   m_TagString: SimObjPhysics
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -15482,7 +15482,7 @@ GameObject:
   - component: {fileID: 1325308139}
   - component: {fileID: 1325308140}
   m_Layer: 8
-  m_Name: FP417:polySurface386
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19242,7 +19242,7 @@ GameObject:
   - component: {fileID: 1654964008}
   - component: {fileID: 1654964010}
   m_Layer: 8
-  m_Name: FP417:polySurface85
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -21603,7 +21603,7 @@ GameObject:
   - component: {fileID: 1923679181}
   - component: {fileID: 1923679182}
   m_Layer: 8
-  m_Name: FP417:polySurface107
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1084,7 +1084,7 @@ GameObject:
   - component: {fileID: 115637053}
   - component: {fileID: 115637054}
   m_Layer: 8
-  m_Name: FP408:polySurface169
+  m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2230,7 +2230,7 @@ GameObject:
   - component: {fileID: 220486584}
   - component: {fileID: 220486585}
   m_Layer: 8
-  m_Name: FP408:polySurface171
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2932,6 +2932,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5492781732374114145, guid: 6aa876dadb5174d619fea4c2c67ba730,
         type: 3}
+      propertyPath: m_Name
+      value: Faucet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492781732374114145, guid: 6aa876dadb5174d619fea4c2c67ba730,
+        type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -2999,6 +3004,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492781732860030574, guid: 6aa876dadb5174d619fea4c2c67ba730,
+        type: 3}
+      propertyPath: m_Name
+      value: Faucet
       objectReference: {fileID: 0}
     - target: {fileID: 5492781732860030574, guid: 6aa876dadb5174d619fea4c2c67ba730,
         type: 3}
@@ -5790,7 +5800,7 @@ GameObject:
   - component: {fileID: 629991894}
   - component: {fileID: 629991896}
   m_Layer: 8
-  m_Name: FP408:Cylinder.269
+  m_Name: LightFixture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8647,7 +8657,7 @@ GameObject:
   - component: {fileID: 900125021}
   - component: {fileID: 900125020}
   m_Layer: 0
-  m_Name: FP408:Cylinder.264
+  m_Name: Bathtub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -9090,7 +9100,7 @@ GameObject:
   - component: {fileID: 943894985}
   - component: {fileID: 943894986}
   m_Layer: 8
-  m_Name: FP408:polySurface107
+  m_Name: Cabinet
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10527,7 +10537,7 @@ GameObject:
   - component: {fileID: 1087992391}
   - component: {fileID: 1087992392}
   m_Layer: 8
-  m_Name: FP408:polySurface308
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10933,7 +10943,7 @@ GameObject:
   - component: {fileID: 1140217605}
   - component: {fileID: 1140217607}
   m_Layer: 8
-  m_Name: FP408:polySurface292
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11119,7 +11129,7 @@ GameObject:
   - component: {fileID: 1153418960}
   - component: {fileID: 1153418959}
   m_Layer: 0
-  m_Name: FP408:Cylinder.263
+  m_Name: Bathtub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -18004,7 +18014,7 @@ GameObject:
   - component: {fileID: 1899525626}
   - component: {fileID: 1899525628}
   m_Layer: 8
-  m_Name: FP408:polySurface106
+  m_Name: CounterTop
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19594,7 +19604,7 @@ GameObject:
   - component: {fileID: 2042984482}
   - component: {fileID: 2042984483}
   m_Layer: 8
-  m_Name: FP408:polySurface172
+  m_Name: DoorKnob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20287,6 +20297,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 543631489}
     m_Modifications:
     - target: {fileID: 1036499594881244, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
+      propertyPath: m_Name
+      value: ToiletBrushHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036499594881244, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -20329,6 +20343,10 @@ PrefabInstance:
     - target: {fileID: 1618090677609456, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651559608535274, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
+      propertyPath: m_Name
+      value: ToiletBrush
       objectReference: {fileID: 0}
     - target: {fileID: 1651559608535274, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags

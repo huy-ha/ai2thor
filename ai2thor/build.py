@@ -20,7 +20,9 @@ PRIVATE_S3_BUCKET = "ai2-thor-private"
 PYPI_S3_BUCKET = "ai2-thor-pypi"
 
 LOCAL_BUILD_COMMIT_ID = "local"
-AUTO_BUILD_PLATFORMS = [OSXIntel64, Linux64, CloudRendering]
+AUTO_BUILD_PLATFORMS = [
+    OSXIntel64,
+    Linux64, CloudRendering]
 
 COMMIT_ID = None
 try:
@@ -115,7 +117,8 @@ class Build(object):
                 z = self.zipfile()
                 # use tmpdir instead or a random number
                 extract_dir = os.path.join(self.tmp_dir, self.name)
-                logger.debug("Extracting zipfile %s" % os.path.basename(self.url))
+                logger.debug("Extracting zipfile %s" %
+                             os.path.basename(self.url))
                 z.extractall(extract_dir)
 
                 os.rename(extract_dir, self.base_dir)
@@ -129,7 +132,8 @@ class Build(object):
                 os.chmod(self.executable_path, 0o755)
 
             else:
-                logger.debug("%s exists - skipping download" % (self.executable_path,))
+                logger.debug("%s exists - skipping download" %
+                             (self.executable_path,))
 
     def zipfile(self):
         zip_data = ai2thor.downloader.download(

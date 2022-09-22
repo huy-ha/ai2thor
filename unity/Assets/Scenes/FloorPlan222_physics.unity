@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.94321895, g: 0.9682879, b: 0.77945185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4803,7 +4803,7 @@ GameObject:
   - component: {fileID: 633627916}
   - component: {fileID: 633627915}
   m_Layer: 8
-  m_Name: FP222:Base19
+  m_Name: Painting
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -4991,7 +4991,7 @@ GameObject:
   - component: {fileID: 648065262}
   - component: {fileID: 648065261}
   m_Layer: 8
-  m_Name: FP222:Base17
+  m_Name: Painting
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -6350,7 +6350,7 @@ GameObject:
   - component: {fileID: 722681773}
   - component: {fileID: 722681772}
   m_Layer: 8
-  m_Name: FP225:Cylinder.175 (1)
+  m_Name: CurtainRods
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11268,7 +11268,7 @@ GameObject:
   - component: {fileID: 1183069305}
   - component: {fileID: 1183069256}
   m_Layer: 8
-  m_Name: FP222:Cylinder.018
+  m_Name: FirePlace
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11288,7 +11288,7 @@ GameObject:
   - component: {fileID: 1183069307}
   - component: {fileID: 1183069257}
   m_Layer: 8
-  m_Name: FP222:Cylinder.028
+  m_Name: FirePlace
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11350,7 +11350,7 @@ GameObject:
   - component: {fileID: 1183069253}
   - component: {fileID: 1183069260}
   m_Layer: 8
-  m_Name: FP222:Base5
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

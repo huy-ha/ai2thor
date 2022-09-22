@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12432,7 +12432,7 @@ GameObject:
   - component: {fileID: 1846666229}
   - component: {fileID: 1846666237}
   m_Layer: 8
-  m_Name: FP217:Cylinder.131
+  m_Name: CeilingFan
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12451,7 +12451,7 @@ GameObject:
   - component: {fileID: 1846666304}
   - component: {fileID: 1846666303}
   m_Layer: 8
-  m_Name: FP217:Cube.1069
+  m_Name: Curtains
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -12470,7 +12470,7 @@ GameObject:
   - component: {fileID: 1846666306}
   - component: {fileID: 1846666305}
   m_Layer: 8
-  m_Name: FP217:Cylinder.128
+  m_Name: CurtainRods
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -12489,7 +12489,7 @@ GameObject:
   - component: {fileID: 1846666312}
   - component: {fileID: 1846666311}
   m_Layer: 8
-  m_Name: FP217:Cube.1068
+  m_Name: Poster
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -12508,7 +12508,7 @@ GameObject:
   - component: {fileID: 1846666315}
   - component: {fileID: 1846666314}
   m_Layer: 8
-  m_Name: FP217:Cube.1067
+  m_Name: Poster
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -12528,7 +12528,7 @@ GameObject:
   - component: {fileID: 1846666323}
   - component: {fileID: 1846666337}
   m_Layer: 8
-  m_Name: FP217:Cube.1047
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.35872743, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8593,6 +8593,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 473927308}
     m_Modifications:
     - target: {fileID: 1036499594881244, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
+      propertyPath: m_Name
+      value: ToiletBrushHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036499594881244, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -8635,6 +8639,10 @@ PrefabInstance:
     - target: {fileID: 1618090677609456, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651559608535274, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
+      propertyPath: m_Name
+      value: ToiletBrush
       objectReference: {fileID: 0}
     - target: {fileID: 1651559608535274, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10996,7 +11004,7 @@ GameObject:
   - component: {fileID: 1017703301}
   - component: {fileID: 1017703302}
   m_Layer: 8
-  m_Name: FP427:polySurface178
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13935,7 +13943,7 @@ GameObject:
   - component: {fileID: 1193517388}
   - component: {fileID: 1193517389}
   m_Layer: 8
-  m_Name: FP427:polySurface180
+  m_Name: DoorFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14806,7 +14814,7 @@ GameObject:
   - component: {fileID: 1246355700}
   - component: {fileID: 1246355702}
   m_Layer: 8
-  m_Name: FP427:Cube.1393
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16380,7 +16388,7 @@ GameObject:
   - component: {fileID: 1339692607}
   - component: {fileID: 1339692609}
   m_Layer: 8
-  m_Name: FP427:Cylinder.252
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19739,7 +19747,7 @@ GameObject:
   - component: {fileID: 1581973739}
   - component: {fileID: 1581973741}
   m_Layer: 8
-  m_Name: FP427:polySurface4
+  m_Name: Wall
   m_TagString: SimObjPhysics
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -23980,7 +23988,7 @@ GameObject:
   - component: {fileID: 1905797291}
   - component: {fileID: 1905797292}
   m_Layer: 8
-  m_Name: FP427:polySurface182
+  m_Name: DoorKnob
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

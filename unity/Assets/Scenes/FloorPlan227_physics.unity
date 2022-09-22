@@ -51348,7 +51348,7 @@ GameObject:
   - component: {fileID: 1792469382}
   - component: {fileID: 1792469381}
   m_Layer: 8
-  m_Name: FP227:Room.018
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

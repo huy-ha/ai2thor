@@ -5113,7 +5113,7 @@ GameObject:
   - component: {fileID: 579987165}
   - component: {fileID: 579987173}
   m_Layer: 8
-  m_Name: FP202:Sphere.041
+  m_Name: CeilingLight
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5133,7 +5133,7 @@ GameObject:
   - component: {fileID: 579987191}
   - component: {fileID: 579987167}
   m_Layer: 8
-  m_Name: FP202:polySurface4
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -5153,7 +5153,7 @@ GameObject:
   - component: {fileID: 579987193}
   - component: {fileID: 579987172}
   m_Layer: 8
-  m_Name: FP202:polySurface7
+  m_Name: WindowFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -5174,7 +5174,7 @@ GameObject:
   - component: {fileID: 579987169}
   - component: {fileID: 579987174}
   m_Layer: 8
-  m_Name: FP202:polySurface2
+  m_Name: BaseBoard
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5195,7 +5195,7 @@ GameObject:
   - component: {fileID: 579987170}
   - component: {fileID: 579987178}
   m_Layer: 8
-  m_Name: FP202:polySurface1
+  m_Name: DoorFrame
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

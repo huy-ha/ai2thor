@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.9344254, g: 0.9607753, b: 0.7738548, a: 1}
+  m_IndirectSpecularColor: {r: 0.94321895, g: 0.9682879, b: 0.77945185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2886,7 +2886,7 @@ GameObject:
   - component: {fileID: 112218325}
   - component: {fileID: 112218324}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -4620,7 +4620,7 @@ GameObject:
   - component: {fileID: 155475243}
   - component: {fileID: 155475242}
   m_Layer: 8
-  m_Name: Base
+  m_Name: StoveKnob
   m_TagString: SimObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -10766,7 +10766,7 @@ GameObject:
   - component: {fileID: 371552653}
   - component: {fileID: 371552652}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -14444,7 +14444,7 @@ GameObject:
   - component: {fileID: 522686362}
   - component: {fileID: 522686361}
   m_Layer: 8
-  m_Name: Base
+  m_Name: StoveKnob
   m_TagString: SimObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -17431,7 +17431,7 @@ GameObject:
   - component: {fileID: 665065680}
   - component: {fileID: 665065679}
   m_Layer: 8
-  m_Name: Base
+  m_Name: StoveKnob
   m_TagString: SimObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -25555,7 +25555,7 @@ GameObject:
   - component: {fileID: 1036805132}
   - component: {fileID: 1036805131}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -35085,7 +35085,7 @@ GameObject:
   - component: {fileID: 1452811408}
   - component: {fileID: 1452811407}
   m_Layer: 8
-  m_Name: Base
+  m_Name: Stove
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -38128,7 +38128,7 @@ GameObject:
   - component: {fileID: 1575115483}
   - component: {fileID: 1575115482}
   m_Layer: 8
-  m_Name: Base
+  m_Name: StoveKnob
   m_TagString: SimObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

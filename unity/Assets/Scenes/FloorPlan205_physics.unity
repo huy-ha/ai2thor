@@ -9207,7 +9207,7 @@ GameObject:
   - component: {fileID: 761914565}
   - component: {fileID: 761914573}
   m_Layer: 8
-  m_Name: FP205:Room.009
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

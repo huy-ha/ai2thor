@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.9427248, g: 0.96789616, b: 0.77920884, a: 1}
+  m_IndirectSpecularColor: {r: 0.94321895, g: 0.9682879, b: 0.77945185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5700,7 +5700,7 @@ GameObject:
   - component: {fileID: 724770950}
   - component: {fileID: 724770951}
   m_Layer: 8
-  m_Name: FP323:Base
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11938,7 +11938,7 @@ GameObject:
   - component: {fileID: 1340632913}
   - component: {fileID: 1340632914}
   m_Layer: 8
-  m_Name: FP323:Base1 1
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

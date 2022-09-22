@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.70383745, g: 0.7173319, b: 0.7360205, a: 1}
+  m_IndirectSpecularColor: {r: 0.7183862, g: 0.7320165, b: 0.7521288, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10593,7 +10593,7 @@ GameObject:
   - component: {fileID: 535065041}
   - component: {fileID: 535065040}
   m_Layer: 8
-  m_Name: Sphere.028
+  m_Name: Ceiling
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -10614,7 +10614,7 @@ GameObject:
   - component: {fileID: 535065042}
   - component: {fileID: 535065048}
   m_Layer: 8
-  m_Name: Sphere.025
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -18369,7 +18369,7 @@ GameObject:
   - component: {fileID: 979838270}
   - component: {fileID: 979838269}
   m_Layer: 8
-  m_Name: Sphere.027
+  m_Name: KitchenSink
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -30100,7 +30100,7 @@ GameObject:
   - component: {fileID: 1664366592}
   - component: {fileID: 1664366591}
   m_Layer: 8
-  m_Name: Sphere.031
+  m_Name: CeilingLight
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -31395,7 +31395,7 @@ GameObject:
   - component: {fileID: 1759857305}
   - component: {fileID: 1759857304}
   m_Layer: 8
-  m_Name: Sphere.026
+  m_Name: Bowl
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

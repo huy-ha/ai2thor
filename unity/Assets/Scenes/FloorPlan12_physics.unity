@@ -17394,7 +17394,7 @@ GameObject:
   - component: {fileID: 854629133}
   - component: {fileID: 854629136}
   m_Layer: 8
-  m_Name: Room.046
+  m_Name: DoorKnob
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -30354,7 +30354,7 @@ GameObject:
   - component: {fileID: 1480579168}
   - component: {fileID: 1480579171}
   m_Layer: 8
-  m_Name: Room.042
+  m_Name: Door
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -36795,7 +36795,7 @@ GameObject:
   - component: {fileID: 1763951013}
   - component: {fileID: 1763951016}
   m_Layer: 8
-  m_Name: Room.045
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3
@@ -39611,7 +39611,7 @@ GameObject:
   - component: {fileID: 1856060996}
   - component: {fileID: 1856060999}
   m_Layer: 8
-  m_Name: Room.043
+  m_Name: Ceiling
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 3

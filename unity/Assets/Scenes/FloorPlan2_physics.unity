@@ -30573,7 +30573,7 @@ GameObject:
   - component: {fileID: 958433199}
   - component: {fileID: 958433198}
   m_Layer: 0
-  m_Name: polySurface1
+  m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49234,7 +49234,7 @@ GameObject:
   - component: {fileID: 1465465574}
   - component: {fileID: 1465465573}
   m_Layer: 0
-  m_Name: polySurface2
+  m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

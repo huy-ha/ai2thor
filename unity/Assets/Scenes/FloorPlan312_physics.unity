@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.0556667, g: 1.0320686, b: 1.0090238, a: 1}
+  m_IndirectSpecularColor: {r: 1.0533062, g: 1.0299526, b: 1.0065842, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3622,7 +3622,7 @@ GameObject:
   - component: {fileID: 445022881}
   - component: {fileID: 445022883}
   m_Layer: 8
-  m_Name: FP312:Cube.1676
+  m_Name: PaperBag
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6495,7 +6495,7 @@ GameObject:
   - component: {fileID: 880412505}
   - component: {fileID: 880412507}
   m_Layer: 8
-  m_Name: FP312:Cube.1672
+  m_Name: WhiteBoard
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

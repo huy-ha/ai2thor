@@ -4235,7 +4235,7 @@ GameObject:
   - component: {fileID: 563839780}
   - component: {fileID: 563839779}
   m_Layer: 8
-  m_Name: polySurface3
+  m_Name: Window
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -7351,6 +7351,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1331515949}
     m_Modifications:
     - target: {fileID: 1036499594881244, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
+      propertyPath: m_Name
+      value: ToiletBrushHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036499594881244, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -7393,6 +7397,10 @@ PrefabInstance:
     - target: {fileID: 1618090677609456, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651559608535274, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
+      propertyPath: m_Name
+      value: ToiletBrush
       objectReference: {fileID: 0}
     - target: {fileID: 1651559608535274, guid: c49b9aa76ee1445c6b71d863f14818e5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8470,7 +8478,7 @@ GameObject:
   - component: {fileID: 1253158018}
   - component: {fileID: 1253158017}
   m_Layer: 8
-  m_Name: FP401:Cube.059
+  m_Name: Mirror
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -13606,7 +13614,7 @@ GameObject:
   - component: {fileID: 1861922268}
   - component: {fileID: 1861922270}
   m_Layer: 8
-  m_Name: FP401:Sphere.016
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14479,7 +14487,7 @@ GameObject:
   - component: {fileID: 1965672266}
   - component: {fileID: 1965672268}
   m_Layer: 8
-  m_Name: FP401:Sphere.017
+  m_Name: Bathtub
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -14578,7 +14586,7 @@ GameObject:
   - component: {fileID: 1968392709}
   - component: {fileID: 1968392710}
   m_Layer: 8
-  m_Name: FP401:polySurface299
+  m_Name: Wall
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15419,7 +15427,7 @@ GameObject:
   - component: {fileID: 2102831739}
   - component: {fileID: 2102831740}
   m_Layer: 8
-  m_Name: FP401:Cylinder.063
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18166,6 +18174,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2323148388780219171, guid: d6ea6e45d62c3456eb5f16507fd35eb3,
         type: 3}
+      propertyPath: m_Name
+      value: Faucet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323148388780219171, guid: d6ea6e45d62c3456eb5f16507fd35eb3,
+        type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
@@ -18242,6 +18255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ShowerHead_748119b5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840000046526497928, guid: 36171cbd701c24e1f975bf00e91fcf73,
+        type: 3}
+      propertyPath: m_Name
+      value: ShowerHead
       objectReference: {fileID: 0}
     - target: {fileID: 3840000046526497928, guid: 36171cbd701c24e1f975bf00e91fcf73,
         type: 3}

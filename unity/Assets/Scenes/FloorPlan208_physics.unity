@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.94317067, g: 0.9682602, b: 0.7794443, a: 1}
+  m_IndirectSpecularColor: {r: 0.94321895, g: 0.9682879, b: 0.77945185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10727,7 +10727,7 @@ GameObject:
   - component: {fileID: 990785167}
   - component: {fileID: 990785160}
   m_Layer: 8
-  m_Name: FP208:Base23
+  m_Name: LightFixture
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19686,7 +19686,7 @@ GameObject:
   - component: {fileID: 1692775121}
   - component: {fileID: 1692775123}
   m_Layer: 8
-  m_Name: FP208:Base14
+  m_Name: Painting
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -21532,7 +21532,7 @@ GameObject:
   - component: {fileID: 1928109728}
   - component: {fileID: 1928109727}
   m_Layer: 8
-  m_Name: FP208:Base16
+  m_Name: Painting
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1

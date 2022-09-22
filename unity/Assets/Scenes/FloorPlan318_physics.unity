@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.0556667, g: 1.0320686, b: 1.0090238, a: 1}
+  m_IndirectSpecularColor: {r: 1.0533062, g: 1.0299526, b: 1.0065842, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3615,7 +3615,7 @@ GameObject:
   - component: {fileID: 462436874}
   - component: {fileID: 462436876}
   m_Layer: 8
-  m_Name: FP318:Cube.1809
+  m_Name: Rug
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5450,7 +5450,7 @@ PrefabInstance:
     - target: {fileID: 377960240204603379, guid: d176a30fd21390840b9213193d5fb5a2,
         type: 3}
       propertyPath: m_RotationOffsets.Array.data[0].y
-      value: -89.999855
+      value: -89.99985
       objectReference: {fileID: 0}
     - target: {fileID: 377960240204603379, guid: d176a30fd21390840b9213193d5fb5a2,
         type: 3}
@@ -5470,7 +5470,7 @@ PrefabInstance:
     - target: {fileID: 2231928031469086810, guid: d176a30fd21390840b9213193d5fb5a2,
         type: 3}
       propertyPath: m_RotationOffsets.Array.data[0].y
-      value: -89.999855
+      value: -89.99985
       objectReference: {fileID: 0}
     - target: {fileID: 2231928031469086810, guid: d176a30fd21390840b9213193d5fb5a2,
         type: 3}
@@ -5490,7 +5490,7 @@ PrefabInstance:
     - target: {fileID: 4028366723609269258, guid: d176a30fd21390840b9213193d5fb5a2,
         type: 3}
       propertyPath: m_RotationOffsets.Array.data[0].y
-      value: -89.999855
+      value: -89.99985
       objectReference: {fileID: 0}
     - target: {fileID: 4028366723609269258, guid: d176a30fd21390840b9213193d5fb5a2,
         type: 3}
@@ -6367,6 +6367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chair_ed406845
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507864737884568525, guid: 8478f94ae57407a41bffd56fe238a6ca,
+        type: 3}
+      propertyPath: m_Name
+      value: Chair
       objectReference: {fileID: 0}
     - target: {fileID: 6507864737884568525, guid: 8478f94ae57407a41bffd56fe238a6ca,
         type: 3}
@@ -7501,7 +7506,7 @@ GameObject:
   - component: {fileID: 1084654758}
   - component: {fileID: 1084654757}
   m_Layer: 8
-  m_Name: FP318:Cube.1808
+  m_Name: Poster
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -16653,6 +16658,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chair_b51035a0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507864737884568525, guid: 8478f94ae57407a41bffd56fe238a6ca,
+        type: 3}
+      propertyPath: m_Name
+      value: Chair
       objectReference: {fileID: 0}
     - target: {fileID: 6507864737884568525, guid: 8478f94ae57407a41bffd56fe238a6ca,
         type: 3}
